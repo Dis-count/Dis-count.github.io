@@ -1,9 +1,9 @@
 ---
 layout: post1
 title: This is another template.
-date: 2020-9-02
+date: 2020-9-06
 categories: blog
-tags: [标签一,标签二]
+tags: [标签一]
 description: 文章金句。
 ---
 
