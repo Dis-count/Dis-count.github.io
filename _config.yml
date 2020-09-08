@@ -13,8 +13,8 @@ owner:
   bio: "name: discount" # 填写作者信息：博客描述
 
 # Data
-# gavatar: img/1.ico # 浏览器地址栏小图标，可自定义更改
-favicon: img/1.ico # 浏览器地址栏小图标，可自定义更改
+gavatar: img/1.ico # 浏览器地址栏小图标，可自定义更改
+favicon: img/dolphin.gif # 浏览器地址栏小图标，可自定义更改
 
 douban_username:  # 你的豆瓣id
 twitter_username:
