@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post1
 title: This is another template.
 date: 2020-9-02
 categories: blog
