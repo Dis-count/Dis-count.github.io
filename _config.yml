@@ -46,10 +46,10 @@ defaults:
       layout: "post"
       author: "Emmmm" # 你的名字
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
-
-      layout: "post"
-      author: "Dis" # 你的名字
-      header-img: "img/blue.jpg"
+      # 
+      # layout: "post"
+      # author: "Dis" # 你的名字
+      # header-img: "img/blue.jpg"
 
 # Comments
 comments :
