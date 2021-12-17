@@ -1,9 +1,16 @@
 ---
 layout: page
 title: "Tags"
-description: "哈哈，你找到了我的文章基因库"  
-header-img: "img/semantic.jpg"  
+description: "哈哈，你找到了我的文章基因库"
+header-img: "img/semantic.jpg"
 ---
+## Usage
+
+1. Choose a word you like below
+2. Click it
+3. Relevant articles will pop up at the top of the page
+4. Have a try?
+
 
 ##本页使用方法
 
@@ -33,7 +40,7 @@ header-img: "img/semantic.jpg"
 {% endfor %}
 </ul>
 
-<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
+<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
 <script language="javascript">
 $.fn.tagcloud.defaults = {
     size: {start: 1, end: 1, unit: 'em'},
