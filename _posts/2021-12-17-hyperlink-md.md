@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is another template.
+title: Hyperlink in Markdown
 date: 2021-12-17
 categories: blog
 tags: [Skill]
@@ -16,6 +16,8 @@ description: How to insert link in Markdown.
 2.指向本地文件的链接：
 
 [red.jpg](./img/red.jpg)
+
+
 
 
 ## 自动链接

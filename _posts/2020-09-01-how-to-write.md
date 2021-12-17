@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: Analysis about stock market
 date: 2020-9-01
 categories: blog
 tags: [StockMarket]
@@ -13,4 +13,4 @@ description: 股市分析
 4. 新能源
 5. 汽车
 6. 化工
-7. 
+7.
