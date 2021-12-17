@@ -4,7 +4,7 @@ header-img: "img/blue.jpg"
 tagline: "cn"
 description: "This is my blog."  # 一句话描述你的博客
 baseurl: ""
-url: "https://dis-count.github.io/"  # 此处填写你的博客地址
+url: "https://dis-count.github.io"  # 此处填写你的博客地址
 
 # About/contact
 owner:
@@ -34,6 +34,10 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Asia/Shanghai
+
+# gems: [jekyll-coffeescript, jekyll-watch, jekyll-assets]
+# gems: [jekyll-paginate]
+# gem: 'wdm', '>= 0.1.0'
 
 # Defaults for posts
 defaults:
