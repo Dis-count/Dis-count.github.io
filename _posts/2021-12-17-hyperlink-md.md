@@ -18,8 +18,6 @@ description: How to insert link in Markdown.
 [red.jpg](./img/red.jpg)
 
 
-
-
 ## 自动链接
 
 使用 <> 包括的 URL 或邮箱地址会被自动转换为超链接：
