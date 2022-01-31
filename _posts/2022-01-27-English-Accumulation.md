@@ -18,3 +18,6 @@ description:
 5. I'll give it a shot 我试试看
 
 6. I'm gonna do
+
+7. finna
+"Finna" is an abbreviation for the phrase "fixing to." It is essentially used in place of the more common (and the more easily understandable) "gonna," which is short for "going to." If you're finna do something, you're going to or planning on doing it.
