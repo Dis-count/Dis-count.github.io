@@ -1,0 +1,142 @@
+I"�<h2 id="usage">Usage</h2>
+
+<ol>
+  <li>Choose a word you like below</li>
+  <li>Click it</li>
+  <li>Relevant articles will pop up at the top of the page</li>
+  <li>Have a try?</li>
+</ol>
+
+<p>##本页使用方法</p>
+
+<ol>
+  <li>在下面选一个你喜欢的词</li>
+  <li>点击它</li>
+  <li>相关的文章会「唰」地一声跳到页面顶端</li>
+  <li>马上试试？</li>
+</ol>
+
+<p>##基因列表</p>
+
+<div id="tag_cloud">
+
+<a href="#OperationResearch" title="OperationResearch" rel="2">OperationResearch</a>
+
+<a href="#MachineLearning" title="MachineLearning" rel="1">MachineLearning</a>
+
+<a href="#Skill" title="Skill" rel="1">Skill</a>
+
+<a href="#Seminar" title="Seminar" rel="1">Seminar</a>
+
+<a href="#StockMarket" title="StockMarket" rel="2">StockMarket</a>
+
+<a href="#Commonly used" title="Commonly used" rel="3">Commonly used</a>
+
+<a href="#StochasticProcess" title="StochasticProcess" rel="1">StochasticProcess</a>
+
+<a href="#Exam" title="Exam" rel="1">Exam</a>
+
+</div>
+
+<ul class="listing">
+
+  <li class="listing-seperator" id="OperationResearch">OperationResearch</li>
+
+  <li class="listing-item">
+  <time datetime="2021-12-16">2021-12-16</time>
+  <a href="/blog/2021/12/16/DOR-final/" title="2021 DOR Final Exam">2021 DOR Final Exam</a>
+  </li>
+
+  <li class="listing-item">
+  <time datetime="2021-11-26">2021-11-26</time>
+  <a href="/blog/2021/11/26/lazy-constraint/" title="The application of the lazy constraints to solving the symmetric TSP problem.">The application of the lazy constraints to solving the symmetric TSP problem.</a>
+  </li>
+
+
+  <li class="listing-seperator" id="MachineLearning">MachineLearning</li>
+
+  <li class="listing-item">
+  <time datetime="2021-12-14">2021-12-14</time>
+  <a href="/blog/2021/12/14/ES-final/" title="2021 ES Final Exam Content">2021 ES Final Exam Content</a>
+  </li>
+
+
+  <li class="listing-seperator" id="Skill">Skill</li>
+
+  <li class="listing-item">
+  <time datetime="2021-12-17">2021-12-17</time>
+  <a href="/blog/2021/12/17/hyperlink-md/" title="Hyperlink in Markdown">Hyperlink in Markdown</a>
+  </li>
+
+
+  <li class="listing-seperator" id="Seminar">Seminar</li>
+
+  <li class="listing-item">
+  <time datetime="2021-12-17">2021-12-17</time>
+  <a href="/blog/2021/12/17/Seminar/" title="Finite-Sample analysis of reinforcement learning">Finite-Sample analysis of reinforcement learning</a>
+  </li>
+
+
+  <li class="listing-seperator" id="StockMarket">StockMarket</li>
+
+  <li class="listing-item">
+  <time datetime="2022-01-09">2022-01-09</time>
+  <a href="/blog/2022/01/09/general/" title="Analysis about stock market">Analysis about stock market</a>
+  </li>
+
+  <li class="listing-item">
+  <time datetime="2021-12-31">2021-12-31</time>
+  <a href="/blog/2021/12/31/Stock-market/" title="Analysis about stock market">Analysis about stock market</a>
+  </li>
+
+
+  <li class="listing-seperator" id="Commonly used">Commonly used</li>
+
+  <li class="listing-item">
+  <time datetime="2022-01-28">2022-01-28</time>
+  &lt;a href="/blog/2022/01/28/10tips/" title="10 Tips "For Successful Public Speaking""&gt;10 Tips "For Successful Public Speaking"&lt;/a&gt;
+  </li>
+
+  <li class="listing-item">
+  <time datetime="2022-01-27">2022-01-27</time>
+  <a href="/blog/2022/01/27/English-Accumulation/" title="Useful accumulation">Useful accumulation</a>
+  </li>
+
+  <li class="listing-item">
+  <time datetime="2022-01-26">2022-01-26</time>
+  <a href="/blog/2022/01/26/English-tutorial/" title="Reply to the 'Thank you'">Reply to the 'Thank you'</a>
+  </li>
+
+
+  <li class="listing-seperator" id="StochasticProcess">StochasticProcess</li>
+
+  <li class="listing-item">
+  <time datetime="2022-05-26">2022-05-26</time>
+  <a href="/blog/2022/05/26/SOR-final/" title="2022 SOR Final Exam Summary">2022 SOR Final Exam Summary</a>
+  </li>
+
+
+  <li class="listing-seperator" id="Exam">Exam</li>
+
+  <li class="listing-item">
+  <time datetime="2022-06-13">2022-06-13</time>
+  <a href="/blog/2022/06/13/QE/" title="2022 QE Exam Summary">2022 QE Exam Summary</a>
+  </li>
+
+
+</ul>
+
+<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
+
+<script language="javascript">
+$.fn.tagcloud.defaults = {
+    size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#f8e0e6', end: '#ff3333'}
+};
+
+$(function () {
+    $('#tag_cloud a').tagcloud();
+});
+</script>
+
+:ET

@@ -1,0 +1,25 @@
+I"Ú<p>The main content about deterministic models.</p>
+
+<ol>
+  <li>
+    <p>Duality theorem.
+Weak/Strong duality.</p>
+  </li>
+  <li>
+    <p>Set covering/partition/packing
+$Kx \geq e, Kx = e, Kx \leq e$.</p>
+  </li>
+  <li>
+    <p>Nonlinear programming.
+Use KKT conditions.</p>
+  </li>
+  <li>
+    <p>Convexity.
+Use definition to prove.</p>
+  </li>
+  <li>
+    <p>Dynamic lot sizing.
+If every period we can order two types of products, what this problem would be.</p>
+  </li>
+</ol>
+:ET

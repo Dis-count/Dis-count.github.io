@@ -1,6 +1,6 @@
 # Site settings
-title: Discount # 你的博客名字，可以定义修订
-header-img: "img/blue.jpg"
+title: Discount's Blog # 你的博客名字，可以定义修订
+header-img: "img/test.jpg"
 tagline: "cn"
 description: "This is my blog."  # 一句话描述你的博客
 baseurl: ""

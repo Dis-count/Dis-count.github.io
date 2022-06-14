@@ -1,0 +1,18 @@
+I"�<h2 id="行内式">行内式</h2>
+
+<p>1.普通链接：</p>
+
+<p><a href="http://www.google.com/">Google</a></p>
+
+<p>2.指向本地文件的链接：</p>
+
+<p><a href="./img/red.jpg">red.jpg</a></p>
+
+<h2 id="自动链接">自动链接</h2>
+
+<p>使用 &lt;&gt; 包括的 URL 或邮箱地址会被自动转换为超链接：</p>
+
+<p><a href="http://www.google.com/">http://www.google.com/</a></p>
+
+<p><a href="mailto:123@email.com">123@email.com</a></p>
+:ET
