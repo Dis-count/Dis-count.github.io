@@ -7,4 +7,4 @@ tags: [VSCode]
 description: Keyboard shortcut.
 ---
 
-![test](F:\Files\Github\Dis-count.github.io\pictures\keyboard-shortcuts.pdf)
+![test](pictures/keyboard-shortcuts.pdf)
