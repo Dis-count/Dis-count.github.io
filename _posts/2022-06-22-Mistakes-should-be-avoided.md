@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reply to the 'Thank you'
+title: Mistakes should be avoided
 date: 2022-06-22
 categories: blog
 tags: [Commonly used]
