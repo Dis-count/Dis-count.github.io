@@ -30,3 +30,17 @@ m.addConstr(x <= 1, name='c0')
 for i in range(2):
         m.addConstr(x[i] + z[i] <= d[i])
 
+
+## Some mistakes you may make
+
+1.
+Notice that 
+
+addMVar (shape, lb=0.0, ub=float('inf'), obj=0.0, vtype=GRB.CONTINUOUS, name="" )
+
+The lower bound is non-negative by default.
+
+2.
+How to obtain the variables.
+
+Bear in mind that the difference between global and local variables in the function.
