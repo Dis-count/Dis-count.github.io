@@ -1,3 +1,12 @@
+---
+layout: post
+title: Summary about Gurobi
+date: 2022-07-16
+categories: blog
+tags: [Gurobi]
+description: Some skills about gurobi.
+---
+
 ## addMVar vs addVar
 
 For MVar, 
