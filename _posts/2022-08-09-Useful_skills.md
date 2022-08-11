@@ -2,7 +2,7 @@
 layout: post
 title: Useful skills
 date: 2022-08-09
-categories: misc
+categories: Misc
 tags: [Skills]
 ---
 

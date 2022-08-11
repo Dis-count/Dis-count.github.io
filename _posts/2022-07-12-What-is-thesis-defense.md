@@ -2,8 +2,8 @@
 layout: post
 title: What is a thesis defense?
 date: 2022-07-12
-categories: blog
-tags: [Commonly used]
+categories: Paper
+tags: [Thesis defense]
 description:
 ---
 

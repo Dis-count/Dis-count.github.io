@@ -2,7 +2,7 @@
 layout: post
 title: Summary about Gurobi
 date: 2022-07-16
-categories: blog
+categories: Programming
 tags: [Gurobi]
 description: Some skills about gurobi.
 ---

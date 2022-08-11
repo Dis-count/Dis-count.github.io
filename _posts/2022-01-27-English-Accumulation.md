@@ -2,7 +2,7 @@
 layout: post
 title: Useful accumulation
 date: 2022-01-27
-categories: blog
+categories: English
 tags: [Commonly used]
 description:
 ---

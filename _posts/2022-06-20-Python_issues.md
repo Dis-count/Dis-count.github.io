@@ -2,7 +2,7 @@
 layout: post
 title: Python issue
 date: 2022-06-13
-categories: blog
+categories: Programming
 tags: [Python]
 description: 
 ---

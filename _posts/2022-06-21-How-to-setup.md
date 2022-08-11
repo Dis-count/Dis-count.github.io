@@ -2,8 +2,8 @@
 layout: post
 title: How to run Jekyll
 subtitle: Steps and problems
-categories: markdown
-tags: [record]
+categories: Programming
+tags: [Jekyll]
 ---
 
 ## Installing Jekyll

@@ -3,7 +3,7 @@ layout: post
 title: Hyperlink in Markdown
 date: 2021-12-17
 categories: blog
-tags: [Skill]
+tags: [Markdown]
 description: How to insert link in Markdown.
 
 ---

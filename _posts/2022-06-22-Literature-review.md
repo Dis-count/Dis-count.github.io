@@ -2,8 +2,8 @@
 layout: articles
 title: Some literature reviews
 date: 2022-06-20
-categories: blog
-tags: [Paper]
+categories: Paper
+tags: [Literature review]
 description: Summary about the ideas of papers.
 ---
 

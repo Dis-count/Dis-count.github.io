@@ -2,7 +2,7 @@
 layout: post
 title: Useful Phrases
 date: 2022-07-30
-categories: blog
+categories: English
 tags: [BBC learning]
 description:
 ---

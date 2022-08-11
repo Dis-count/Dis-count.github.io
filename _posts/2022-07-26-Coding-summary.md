@@ -2,7 +2,7 @@
 layout: post
 title: Summary about coding
 date: 2022-07-26
-categories: blog
+categories: Programming
 tags: [Python]
 description: Some skills about coding.
 ---

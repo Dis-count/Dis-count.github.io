@@ -2,8 +2,8 @@
 layout: post
 title: Mistakes in LaTex
 date: 2022-06-27
-categories: blog
-tags: [Commonly used]
+categories: Programming
+tags: [LaTex]
 description:
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Minimax regret
 date: 2022-08-04
-categories: blog
+categories: OR
 tags: [Decision theory]
 description:
 ---

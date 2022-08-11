@@ -6,7 +6,7 @@ categories: Programming
 tags: [Java]
 ---
 
-Reference: https://zhangnai.xin/2016/09/20/LeetCode-Framework/
+Reference: ![](https://zhangnai.xin/2016/09/20/LeetCode-Framework/)
 
 The post is used to record the leetcode framework by using Java.
 

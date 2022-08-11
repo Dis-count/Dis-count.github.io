@@ -2,7 +2,7 @@
 layout: post
 title: Make an order in a restaurant
 date: 2022-06-22
-categories: blog
+categories: English
 tags: [Commonly used]
 description:
 ---
