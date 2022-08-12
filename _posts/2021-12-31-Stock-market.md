@@ -2,7 +2,7 @@
 layout: post
 title: Analysis about stock market
 date: 2021-12-31
-categories: blog
+categories: Blog
 tags: [StockMarket]
 description: 股市分析
 ---
