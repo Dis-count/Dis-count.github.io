@@ -2,7 +2,7 @@
 layout: post
 title: How to run Jekyll
 subtitle: Steps and problems
-categories: Programming
+categories: Jekyll
 tags: [Jekyll]
 ---
 
