@@ -15,11 +15,15 @@ tags: [PyTorch]
 
 Next time, you can activate this virtual environment directly.
 
+Remark: conda env remove ***(PyTorch)
+
 3. conda activate PyTorch
 激活虚拟环境
 
 (base) \to (PyTorch)  （开发环境）
 
 4. 进入官网根据配置选择安装 GPU or CPU, 在(PyTorch) 环境下 run the command.
+
+Remark: GPU only NVIDIA under Windows, 
 
 5. type 'python', 'import torch'

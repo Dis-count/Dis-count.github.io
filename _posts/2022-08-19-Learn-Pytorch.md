@@ -13,6 +13,7 @@ Predictive modeling with deep learning is a skill that modern developers need to
 PyTorch is the premier open-source deep learning framework developed and maintained by Facebook.
 
 ------------------------------------------------
+
 PyTorch is a Python-based scientific computing package serving two broad purposes:
 
 - A replacement for NumPy to use the power of GPUs and other accelerators.
