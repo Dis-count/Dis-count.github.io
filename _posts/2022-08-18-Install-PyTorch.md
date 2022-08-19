@@ -13,6 +13,8 @@ tags: [PyTorch]
 2. conda create -n PyTorch python=3.9  
 创建一个 python 的虚拟环境， PyTorch 是环境变量名（可以是任意英文）
 
+Next time, you can activate this virtual environment directly.
+
 3. conda activate PyTorch
 激活虚拟环境
 
