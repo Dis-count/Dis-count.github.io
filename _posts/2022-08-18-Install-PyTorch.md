@@ -15,7 +15,7 @@ tags: [PyTorch]
 
 Next time, you can activate this virtual environment directly.
 
-Remark: conda env remove ***(PyTorch)
+Remark: conda env remove -n ***(PyTorch)
 
 3. conda activate PyTorch
 激活虚拟环境
@@ -27,3 +27,9 @@ Remark: conda env remove ***(PyTorch)
 Remark: GPU only NVIDIA under Windows, 
 
 5. type 'python', 'import torch'
+
+-----------------------------
+
+conda list -n env1  查看env1 list
+
+conda install -n env1 numpy   /install numpy at env1
