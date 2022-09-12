@@ -6,6 +6,8 @@ categories: Programming
 tags: [Python]
 ---
 
+[add on that](https://blog.csdn.net/qsmx666/article/details/115433624)
+
 ## Usage of Bisect
 
 bisect是python内置模块，用于有序序列的插入和查找。
