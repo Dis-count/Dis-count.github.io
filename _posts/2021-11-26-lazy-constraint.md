@@ -3,8 +3,7 @@ layout: post
 title: The application of the lazy constraints to solving the symmetric TSP problem.
 date: 2021-11-26
 categories: OR
-tags: [OperationResearch]
-description: Project.
+tags: [OperationResearch, Project]
 ---
 
 Abstract
