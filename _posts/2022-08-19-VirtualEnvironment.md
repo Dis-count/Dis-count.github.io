@@ -29,6 +29,8 @@ This tutorial will cover everything you need to know about virtual environments 
 
 > conda create --name ancillary python=3.7
 
+> conda create -n ancillary python=3.7
+
 2. Check the envs.
 
 ~~~python
