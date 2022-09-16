@@ -28,12 +28,3 @@ $\left[\frac{\partial \mathbf{x}}{\partial y}\right]_i=\frac{\partial x_i}{\part
 Then you will not make a mistake again.
 
 Find http://matrixcookbook.com for more details.
-
-
-skewer  扦子
-
-lingering
-
-Satay sauce
-
-scallop  扇贝
