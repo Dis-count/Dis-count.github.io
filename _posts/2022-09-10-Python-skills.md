@@ -86,4 +86,20 @@ print(string[::-1])
 print(ord('b')-ord('a')) 
 ```
 
+### Print
 
+Sometimes 
+
+```python
+print(variable) 
+```
+will not work in VScode.
+
+Please use
+```python
+print('variable is:', variable) 
+```
+
+Or use cmd to test the code instead.
+
+That is not the problem of your code, that is the problem of your editor.

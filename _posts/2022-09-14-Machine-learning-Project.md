@@ -16,4 +16,6 @@ tags: [MachineLearning, Project]
 
 [](https://github.com/jakesant/tsp_machine_learning)
 
+[](https://github.com/ahmedstohy/hybrid-pointer-networks)
+
 https://sagemaker-examples.readthedocs.io/en/latest/reinforcement_learning/rl_traveling_salesman_vehicle_routing_coach/rl_traveling_salesman_vehicle_routing_coach.html
