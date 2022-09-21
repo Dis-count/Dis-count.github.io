@@ -13,3 +13,5 @@ tags: [Website]
 3.  DNS(域名解析)
 
 4.  搭建(购买)服务器 / 或 CNAME
+
+For github, go to your repository(yourname.github.io), choose 'pages', force 'https'.

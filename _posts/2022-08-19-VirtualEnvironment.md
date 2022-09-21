@@ -24,7 +24,6 @@ This tutorial will cover everything you need to know about virtual environments 
 
 
 
-
 1. Create a virtual environment(Named 'ancillary')
 
 > conda create --name ancillary python=3.7
@@ -33,9 +32,9 @@ This tutorial will cover everything you need to know about virtual environments 
 
 2. Check the envs.
 
-~~~python
-conda  info --envs
-~~~
+```python
+conda info --envs
+```
 
 3. Activation
 
@@ -43,24 +42,37 @@ conda  info --envs
 conda activate ancillary
 ```
 
-4. Check the packages
+4. Check the packages(ipykernel)
 
 > pip list
 
-5. install a new packages
+or
 
-pip install ipykernel
+> python -m ipykernel --version
 
-6. install jupyter menus
+5. install a new packages at this new environment
+
+> pip install ipykernel
+
+6. install jupyter menus(添加jupyter 内核)
 
 ```python
-python -m ipykernel install --user --name ancillary --display-name "Python (ancillary)"
+python -m ipykernel install --user --name ancillary --display-name "Python(ancillary)"
 jupyter lab
 ```
 
+or
+
+> python -m ipykernel install --user --name kernelname
+
 7. Test kernel
+
+查看内核
+> jupyter kernelspec list
+删除内核
+> jupyter kernelspec remove kernelname
 
 ```python
 import sys
-print (sys.executable)
+print(sys.executable)
 ```
