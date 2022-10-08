@@ -393,3 +393,7 @@ roe  鱼子，蟹黄
 one of a kind  独一无二的
 
 boutique  时装店，精品的
+
+elucidate  阐明
+
+reply slip  回条
