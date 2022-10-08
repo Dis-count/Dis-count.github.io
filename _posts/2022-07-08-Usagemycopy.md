@@ -397,3 +397,5 @@ boutique  时装店，精品的
 elucidate  阐明
 
 reply slip  回条
+
+prowess  高超的技艺
