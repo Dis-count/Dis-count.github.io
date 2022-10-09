@@ -399,3 +399,11 @@ elucidate  阐明
 reply slip  回条
 
 prowess  高超的技艺
+
+paramedic  护理人员
+
+scooter 小型摩托车
+
+brisket 胸脯肉
+
+firm up （使）更坚固;（使）更坚实;（使）更明确;强化;（使）确切;使（价格、价值等）保持坚挺（或稳定）
