@@ -53,3 +53,11 @@ The lower bound is non-negative by default.
 How to obtain the variables.
 
 Bear in mind that the difference between global and local variables in the function.
+
+----------------
+
+m.getVarByName('varz[' + str(k) + ']')
+
+k should be an integer.
+
+ensure getvar is not None.
