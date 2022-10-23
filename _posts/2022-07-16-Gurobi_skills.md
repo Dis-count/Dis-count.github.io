@@ -61,3 +61,40 @@ m.getVarByName('varz[' + str(k) + ']')
 k should be an integer.
 
 ensure getvar is not None.
+
+Two ways to change the type of variables
+
+1. v = m.getVarByName('pi[' + str(1) + ']')
+
+v.vtype = GRB.BINARY
+
+2.  for var in m.getVars():
+        var.vtype = GRB.BINARY
+
+
+Ways to change the constraints:
+
+1.
+Search model.chgCoeff(c0, x, 2.0)
+
+2. 
+vx1 = m.getVarByName('x3')
+
+m.getConstrByName('c1')
+
+m.getCoeff(cc1,vx1)
+
+Note that querying by name can be slow, so either try to avoid it, or do it once (and store the result in a dictionary).
+
+3.  for cnstr in model.getConstrs():
+        print(cnstr.sense, cnstr.rhs)
+
+4. for cnstr in pre.getConstrs():
+      for var in pre.getVars():
+          print(pre.getCoeff(cnstr, var), end=" ")
+
+5. for cnstr in model.getConstrs():
+        print("Constraint %s: sense %s, RHS=%f" % (cnstr.ConstrName, cnstr.Sense, cnstr.RHS))
+        row = model.getRow(cnstr)
+        for k in range(row.size()):
+            print("Variable %s, coefficient %f" % (row.getVar(k).VarName, row.getCoeff(k))
