@@ -86,15 +86,35 @@ m.getCoeff(cc1,vx1)
 
 Note that querying by name can be slow, so either try to avoid it, or do it once (and store the result in a dictionary).
 
-3.  for cnstr in model.getConstrs():
+3.  
+```python
+for cnstr in model.getConstrs():
         print(cnstr.sense, cnstr.rhs)
+```
 
-4. for cnstr in pre.getConstrs():
-      for var in pre.getVars():
-          print(pre.getCoeff(cnstr, var), end=" ")
+4. 
+```python 
+for cnstr in pre.getConstrs():
+    for var in pre.getVars():
+        print(pre.getCoeff(cnstr, var), end=" ")
+```
 
-5. for cnstr in model.getConstrs():
-        print("Constraint %s: sense %s, RHS=%f" % (cnstr.ConstrName, cnstr.Sense, cnstr.RHS))
-        row = model.getRow(cnstr)
-        for k in range(row.size()):
-            print("Variable %s, coefficient %f" % (row.getVar(k).VarName, row.getCoeff(k))
+5. 
+```python   
+for cnstr in model.getConstrs():
+    print("Constraint %s: sense %s, RHS=%f" % (cnstr.ConstrName, cnstr.Sense, cnstr.RHS))
+    row = model.getRow(cnstr)
+    for k in range(row.size()):
+        print("Variable %s, coefficient %f" % (row.getVar(k).VarName, row.getCoeff(k))
+```
+
+c1 = model.addConstr(x + y >= 1.0, "c1")
+c1.rhs = 2.0
+
+To change all rhs. Search Model.setAttr()
+model.setAttr("rhs", conss, values)
+
+----------------------------------
+> print(m.display()) 
+
+It will print out the model.
