@@ -64,13 +64,16 @@ ensure getvar is not None.
 
 Two ways to change the type of variables
 
-1. v = m.getVarByName('pi[' + str(1) + ']')
-
+1. 
+```python
+v = m.getVarByName('pi[' + str(1) + ']')
 v.vtype = GRB.BINARY
+```
 
-2.  for var in m.getVars():
-        var.vtype = GRB.BINARY
-
+```python
+for var in m.getVars():
+    var.vtype = GRB.BINARY
+```
 
 Ways to change the constraints:
 
@@ -118,3 +121,13 @@ model.setAttr("rhs", conss, values)
 > print(m.display()) 
 
 It will print out the model.
+
+
+----------------------------------
+Several ways to change model.
+
+1. If you want to adjust a model from the existing model, you can only get the var and constrs by name.
+
+2. You could write the adjustment in one function, then change the existing model.
+
+3. Use import from another file, you can also use the defined variables.
