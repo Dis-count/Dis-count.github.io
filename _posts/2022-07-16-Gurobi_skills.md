@@ -131,3 +131,25 @@ Several ways to change model.
 2. You could write the adjustment in one function, then change the existing model.
 
 3. Use import from another file, you can also use the defined variables.
+
+
+---------------------------------
+An example: how to use MVars to add 2D-constraints.
+
+```python
+import gurobipy as gp
+import numpy as np
+
+m = 3
+n = 4
+
+model = gp.Model()
+X = model.addMVar((m,n))
+a = np.random.rand(m)
+b = np.random.rand(n)
+
+# Set objective to a @ X @ b
+model.setObjective(sum(b[j] * a @ X[:, j] for j in range(n)))
+```
+
+Tips: use addLConstr to add constraints. 
