@@ -153,3 +153,10 @@ model.setObjective(sum(b[j] * a @ X[:, j] for j in range(n)))
 ```
 
 Tips: use addLConstr to add constraints. 
+
+--------------------------------
+
+import sys
+sys.path.append('../CodeDeterministic')
+
+调用不同文件目录下的函数
