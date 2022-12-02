@@ -32,6 +32,10 @@ typing.__file__
 print(typing.__doc__)
 ```
 
+## 查看对象
+
+object.__dit__
+
 ## 查看源代码
 
 inspect 一个Python内置的标准库
