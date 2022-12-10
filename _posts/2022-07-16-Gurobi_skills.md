@@ -160,3 +160,11 @@ import sys
 sys.path.append('../CodeDeterministic')
 
 调用不同文件目录下的函数
+
+
+---------------------------------
+linearization
+
+https://blog.csdn.net/sanpi329/article/details/123603349
+
+https://zhuanlan.zhihu.com/p/63204658
