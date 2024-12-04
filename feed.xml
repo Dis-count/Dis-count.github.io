@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://dis-count.github.io/jekyll-theme-yat/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dis-count.github.io/jekyll-theme-yat/" rel="alternate" type="text/html" /><updated>2024-12-04T12:05:57+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/feed.xml</id><title type="html">Zikang Li</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Discount</name></author><entry><title type="html">Seminar Chenxin</title><link href="https://dis-count.github.io/jekyll-theme-yat/2023/08/15/Seminar-ChenXin.html" rel="alternate" type="text/html" title="Seminar Chenxin" /><published>2023-08-15T00:00:00+00:00</published><updated>2023-08-15T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/2023/08/15/Seminar-ChenXin</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/2023/08/15/Seminar-ChenXin.html"><![CDATA[<ul>
+  <li>
+    <p>Exponential Time Hypothesis</p>
+  </li>
+  <li>
+    <p>McCormick envelopes</p>
+  </li>
+  <li>
+    <p>Decoy effect vs Attraction effect</p>
+  </li>
+  <li>
+    <p>Substitution matrix</p>
+  </li>
+  <li>
+    <p>Laminar M-Convex Minimization</p>
+  </li>
+</ul>]]></content><author><name>Discount</name></author><category term="Seminar" /><summary type="html"><![CDATA[Exponential Time Hypothesis]]></summary></entry><entry><title type="html">Do research</title><link href="https://dis-count.github.io/jekyll-theme-yat/research/2023/08/02/How-to-research.html" rel="alternate" type="text/html" title="Do research" /><published>2023-08-02T00:00:00+00:00</published><updated>2023-08-02T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/research/2023/08/02/How-to-research</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/research/2023/08/02/How-to-research.html"><![CDATA[<p>初进入课题组，在度过最初小心翼翼观摩老师、师兄师姐日常工作学习，询问各种弱智问题后，在经过几次懵逼的组会后，对课题组有什么资源，我们能作什么研究，感觉还是云山雾罩，对自己的课题idea也是非常朦胧，现在回过头来看，还是文献读少了！一个idea不是凭空想出来的，是建立在大量海量文献阅读基础上提炼而来的，除了努力勤奋，有科研灵性和悟性，能够领悟导师的良苦用心，一点就透，彼此达到无障碍沟通，也是有助于快速确立自己研究方向。读文献可以先从综述review入手，先从最大方面入手，比如就是各个大佬写的“肌萎缩侧索硬化”类似题目综述入手，算是一级目录，再从疾病危险因素、病因假说、病理变化、临床治疗、生物标志物等方面综述入手，算是二级目录，在脑子里形成一个大的结构化picture，在这过程中找到自己感兴趣，并且的确有研究价值的点深入看下去。说到底没有idea归根结底还是文献看得少，看多了自然就有了，当感觉可做的很多时候就是入门了。</p>
+
+<p>写文章时看文献不同于找课题时候的看，找课题时更多需要纵向读重要文献的逻辑，科研的思路，并预测下一步的方向，对每篇文献重要的时结果，从图和Abstract里面能看个大概。而写文章的时候找相关文章看的时候会更加注意叙述方式和文法，这个时候的看，才是对于写作有帮助的看。只要平常看得多记得多，就不会出现所说的，一杯茶一支烟，一个introduction写一天，而是可以很流畅的写一个故事了。</p>
+
+<p>另外，不是读的每篇文献都有收获，不是每次假设都能验证，很多分析P值大于0.05情况，课题全程会收到导师同门质疑，做的过程中自我怀疑，投出的稿子专家质疑，这些是常态。只要还有想法还有思路就能一点点推进课题，但是有种情况当课题陷入僵局或死局时候怎么破，人都有趋利避害，逃避让自己痛苦事情的本能，但是要和这种本能做斗争。但是死局怎么破，一个研究生为了探索自己想要明白的问题而不惜一切去争取，那种aggressive比任何时候都更加笃定和真实。这是我觉得读博“渐入佳境”,痛并快乐着。积极寻求帮助，跳出局来想办法，可能比一味沉溺其中要有效地多。与导师积极沟通（沟通完还能毕业的那种），寻求指导和建议也很重要，再结合自己的思考去执行。</p>
+
+<p>作者：当年无明月
+链接：https://zhuanlan.zhihu.com/p/141136072
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content><author><name>Discount</name></author><category term="Research" /><summary type="html"><![CDATA[初进入课题组，在度过最初小心翼翼观摩老师、师兄师姐日常工作学习，询问各种弱智问题后，在经过几次懵逼的组会后，对课题组有什么资源，我们能作什么研究，感觉还是云山雾罩，对自己的课题idea也是非常朦胧，现在回过头来看，还是文献读少了！一个idea不是凭空想出来的，是建立在大量海量文献阅读基础上提炼而来的，除了努力勤奋，有科研灵性和悟性，能够领悟导师的良苦用心，一点就透，彼此达到无障碍沟通，也是有助于快速确立自己研究方向。读文献可以先从综述review入手，先从最大方面入手，比如就是各个大佬写的“肌萎缩侧索硬化”类似题目综述入手，算是一级目录，再从疾病危险因素、病因假说、病理变化、临床治疗、生物标志物等方面综述入手，算是二级目录，在脑子里形成一个大的结构化picture，在这过程中找到自己感兴趣，并且的确有研究价值的点深入看下去。说到底没有idea归根结底还是文献看得少，看多了自然就有了，当感觉可做的很多时候就是入门了。]]></summary></entry><entry><title type="html">Carbon</title><link href="https://dis-count.github.io/jekyll-theme-yat/2023/03/17/Carbon.html" rel="alternate" type="text/html" title="Carbon" /><published>2023-03-17T00:00:00+00:00</published><updated>2023-03-17T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/2023/03/17/Carbon</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/2023/03/17/Carbon.html"><![CDATA[<p>Take your way</p>
+
+<p>two ways to reduce carbon 1. carbon tax 2. carbon cap and trade</p>
+
+<ol>
+  <li>
+    <p>Weak carbon reductions.</p>
+  </li>
+  <li>
+    <p>customer surplus vs pollution tradeoff</p>
+  </li>
+  <li>
+    <p>focusing on permit allocation mechanism</p>
+  </li>
+  <li>
+    <p>free permit allocation mechanism: grandfather/ benchmarking</p>
+  </li>
+</ol>
+
+<p>lumpsum  一次性支付的金额   customer surplus: 愿意支付的金额与市场价格之差</p>
+
+<p>heterogeneous convex abatement  减少</p>
+
+<p>Literature: Pollution regulation of competitive markets 2020</p>
+
+<p>Cournot competition</p>
+
+<p>a single compliance cycle</p>
+
+<p>permit trading cost(revenue):</p>]]></content><author><name>Discount</name></author><category term="Seminar" /><summary type="html"><![CDATA[Take your way]]></summary></entry><entry><title type="html">Summary of experience</title><link href="https://dis-count.github.io/jekyll-theme-yat/2023/03/14/Fraudulent.html" rel="alternate" type="text/html" title="Summary of experience" /><published>2023-03-14T00:00:00+00:00</published><updated>2023-03-14T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/2023/03/14/Fraudulent</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/2023/03/14/Fraudulent.html"><![CDATA[<ol>
+  <li>
+    <p>-100 China Mobile</p>
+  </li>
+  <li>
+    <p>-199 Yellow shared bicycle</p>
+  </li>
+  <li>
+    <p>-99  Alipay for a fraudulent website</p>
+  </li>
+  <li>
+    <p>-138 hkd credit card information leakage</p>
+  </li>
+</ol>]]></content><author><name>Discount</name></author><category term="Diary" /><summary type="html"><![CDATA[-100 China Mobile]]></summary></entry><entry><title type="html">Meal 2</title><link href="https://dis-count.github.io/jekyll-theme-yat/english/2023/02/15/Order2.html" rel="alternate" type="text/html" title="Meal 2" /><published>2023-02-15T00:00:00+00:00</published><updated>2023-02-15T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/english/2023/02/15/Order2</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/english/2023/02/15/Order2.html"><![CDATA[<p>Excuse me. I dropped my fork. May I have another one?</p>
+
+<p>One more, please.  再来一份</p>
+
+<p>Would you like another helping?  服务员问是否再来一份</p>
+
+<p>Anyone wants a second helping?  helping = 一份食物</p>
+
+<p>How about seconds?</p>
+
+<p>Can I get a refill?  续杯</p>
+
+<p>Drinks are bottomless.</p>
+
+<p>That’s an all-you-can-eat restaurant.  吃到饱</p>
+
+<p>Excuse me. It has been almost thirty minutes since I placed my order.</p>
+
+<p>Excuse me. My order hasn’t arrived yet.</p>
+
+<p>Excuse me. I’ve been here for almost thirty minutes. I haven’t even received a glass of water yet.</p>
+
+<p>I’d like a large order of fries and a Big Mac meal with a side salad and a Coke</p>
+
+<p>Can I pick a different drink?/ Can I supersize my drink / fries? / Can I make my drink / fries larger?</p>
+
+<p>ketchup</p>
+
+<p>It’s on me  我请客</p>
+
+<p>Could we have the check?  俺想結帳了</p>
+
+<p>询问进度</p>
+
+<p>How is the project going?</p>
+
+<p>What is the current status of the report?</p>
+
+<p>How much of the order has been completed so far?</p>
+
+<p>Will you be able to finish (sth) by the deadline?</p>
+
+<p>Everything is going according to schedule regarding (sth).</p>
+
+<p>Things are right on schedule with (sth). behind/ahead of schedule</p>
+
+<p>There’s a slight problem with (sth).</p>
+
+<p>Due to unforeseen circumstances, we’ve fallen behind schedule.</p>
+
+<p>As a result of equipment malfunctions, we can’t meet the deadline.</p>]]></content><author><name>Discount</name></author><category term="English" /><category term="Commonly used" /><summary type="html"><![CDATA[Excuse me. I dropped my fork. May I have another one?]]></summary></entry><entry><title type="html">Summary of stock market</title><link href="https://dis-count.github.io/jekyll-theme-yat/2023/02/14/Summary_of_2022_market.html" rel="alternate" type="text/html" title="Summary of stock market" /><published>2023-02-14T00:00:00+00:00</published><updated>2023-02-14T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/2023/02/14/Summary_of_2022_market</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/2023/02/14/Summary_of_2022_market.html"><![CDATA[<p>2022年注定是不平凡的一年，从omicron 匆匆来袭为开端，又以最终病毒毒性变弱放松管控为结尾。而与疫情一波三折相呼应的是资本市场的风起云涌，这一年的波动率不可谓不大，如果有敏锐的观察力，能够把握进场时机，赚钱似乎不成问题。</p>
+
+<p>从三月中旬恒生的跌入谷底又迅速反弹中，我们似乎看到了政策底的到来，随着对科技股政策的放松，科技股如同卸下了镣铐，股价毫无压力地冲破阻碍一飞冲天。然而好景不长，伴随着美联储加息美元回流，资产价格和汇率随之下跌，恒生在短暂冲高之后，又迎来漫长的看不到尽头的令人绝望的回撤。</p>
+
+<p>终于随着年底政策的转向，绝大多数股票迎来了接近一倍的增长，如同被三年病毒折磨的压抑心情在尽情释放。然而一切在2023年会变好吗，答案从去年的复盘中就能得到。</p>
+
+<p>这一年，我主要持仓在 Tencent, Alibaba, Xiaomi, Bili, 全年略有盈余。
+印象最深刻的莫过于在3月和10月这两波无尽的下跌周期中，对未知的恐惧让我在继续持仓和加仓中犹豫不决。不过回首这段经历，我还是学到了很多。要明白自己在资本市场究竟要干什么？是短期套利还是长期投资，要有自己的判断力不要被市场所影响。要时常复盘，关注大环境的变化，是否基本面很差，个股的基本面有没有变化，内在逻辑是否还在，如果没变就不要太在意一时的得失。</p>
+
+<p>另一件印象比较深刻的事便是面对腾讯大股东减持，有点不知所措，并没有第一时间卖出。之后感受到一定要顺势而为，当断则断，不要抱有侥幸心理。</p>
+
+<p>对于接下来的一年，同样要根据大环境的变化与否，行业逻辑是否变化去灵活应对，希望自己能够吸取经验，继续在市场中磨练心境，虚心学习。</p>
+
+<p>5个基本点： 级别（日周月）-&gt; k线与均线缠绕面积 -&gt; 道琼斯结构 -&gt; 中枢（五段趋势）-&gt; 均线 -&gt; 级别</p>
+
+<p>级别： 月线看趋势, 周线看上下, 日线看买卖点</p>
+
+<hr />
+
+<p>关于人工智能的看法</p>
+
+<p>2023开年以来，最热的领域莫过于AIGC了。随着ChatGPT 的出圈，人们看到了人工智能的强大以及由此带来的巨大生产力的解放。百度作为在AI领域有着深厚积累的公司，在发布了文心一言之后，港股股价快速下跌，尽管晚间的美股投资者十分买账，但这并不能解决国内对大模型研究领域落后的现状。由于国内中文高质量语库的缺失使得LLM的效果并不能让广大群众信服，尽管在算力算法上可能并不逊色于OpenAI，但追赶的步伐依旧任重而道远。另一个对大模型有着深厚积累的便是阿里达摩院，但通义千问的问世也未能拯救阿里巴巴的不断下跌的趋势，面对拼多多，京东，抖音的多重围剿，阿里也确实迫切需要调整战略方向，做出实质的改变，而拆分上市也许是个办法，且看后续的发展。对于其他的下游公司，更多的机会在于能否利用AIGC对自身业务有着实质性的提升。上游公司包括在算力服务器供应上的公司依然有较大的机会。AIGC的能力不可小觑，真正能改变当前技术停滞的局面，从而引领下一次技术革命，希望国内公司也能够跟上步伐。</p>
+
+<p>关于地产的看法</p>
+
+<p>随着三月CPI数据的发布，预想中的强劲复苏似乎并未到来，同比增长 0.7%。原因大家也都提到很多了，人们更愿意去存款而不消费因为对于未来的悲观预期，也有一部分原因是房贷负担很重，没有多余的钱去消费。恒大暴雷以及多地的烂尾楼让大家对地产行业失去了信心，尽管各地政府出台了各种利好政策，包括降低房贷利率，提高公积金贷款额度，但大家并不买账，因为房价依然没有明显的降低。政府不是不想给优惠，实在是不能让房地产硬着陆，因为地产牵扯的行业太多，利益关联太强，牵一发而动全身。对于已经按揭买房的普通人也不希望房价下跌，只有还没上车的刚需希望房价能再降一降。但房子作为一个特殊的商品，即使抛去金融属性，依然会遵循价格是由供需关系来决定的。如今绝大多数产业就业机会都集中于一线城市，只要这些产业依然扎根于这些城市，从业人员就会支撑起一线城市的房价，因为一线城市的面积就那么大，商品房的供应就那么多，所以一线城市的房价不会大幅下跌。更需要担心的是二三线房价被炒作起来的城市，没有核心产业作为支撑，这些地方的房地产只能是泡沫居多，至于什么时候刺破泡沫就看地方政府什么时候能撑到什么时候了。因此对于地产的复苏还是保持谨慎的态度，不要因为一些大V说地产还有机会就冲进去，诚然港股很多地产股确实很便宜，例如万科，龙湖，碧桂园，但还是要保持理性，短期也许有机会，但长期趋势还不明显，要保持观望。</p>
+
+<p>关于美联储加息的看法</p>
+
+<p>随着昨晚万众瞩目的美国 CPI 数据出炉，整体低于预期，美股市场对美联储停止加息步伐的倾向愈加强烈，美元指数也早已反映了这一预期。但高达5%的通胀仍然像达摩克里斯之剑，停止加息就意味着前功尽弃，通胀随时可能再次抬头，想要限制就要付出更大的代价；但继续加息，一意孤行，会有更多的银行暴雷，金融系统的脆弱性暴露无遗。更大的可能是美联储不得不将利率维持在5%左右，观察后续的经济数据从而决定是否采取降息的举措。但值得一提的是，美联储向来将加息作为一种金融收割工具，而不仅仅是为了遏制通胀。现阶段，由于俄乌战争使得欧洲一些国家通胀依然高达两位数，美国依然寄希望于引爆别国的经济，从而转移国内危机，就看谁能硬挺过去了。但美国作为有先手优势的一方，各国不得不跟随其政策做出反应，要看到美国经济硬着陆的机会不大，更大的可能是经济软着陆，经济在下半年陷入衰退。厌恶风险的各位，可以减少持仓，扩大自己的现金流。</p>
+
+<p>关于软银减持阿里</p>
+
+<p>腾讯和阿里作为中国互联网极为出色的两个公司在最近一年内都遭遇了大股东减持，上一次南非报业公司减持时，腾讯股价一蹶不振直接最低达到200以下。但这次软银减持似乎并没有给阿里带来太大的影响，尽管美股有接近6%的跌幅，但港股市场似乎还较为坚挺，ADR换算价已经高于美股接近两个百分点，充分说明了现阶段阿里股价已经很低。随着中美对抗的加深，国际资本不得不考虑开始撤资中概股。而中国政府也更倾向于提高这类公司的持股比例，逐渐将控制权掌握在自己手中。尽管大多数人不看好阿里的未来，觉得以淘宝起家的阿里主营业务正在受到来自拼多多京东抖音的不断蚕食，尽管阿里的投资业务一塌糊涂，但瘦死的骆驼比马大，阿里依然手握阿里云巨大算力，并且在云服务上进行了长远的布局，并且随着政策支持阿里的转型，后续发展还是值得期待的。阿里手里现金依然充裕，回购计划依然在进行，至少90的股价作为现阶段的底部空间问题应该不大，跌破这个区间可以勇敢加仓。</p>
+
+<p>关于融创</p>
+
+<p>关于新能源汽车的看法</p>
+
+<p>比亚迪云辇日前发布，随着U9蹦跳着从幕后走出，其炫酷的外观和垂直起跳的性能着实震撼了许多看官。据称，仰望U9将搭载“易四方”四电机技术，四个车轮可以独立驱动，并且整车功率超过1100马力，零百公里加速时间可达到2秒级。不得不感慨随着汽车性能迎来了巨大的提升后，电车时代已经到来，尽管在全球市场上，渗透率还只有10%，但其趋势已不可阻挡。遥想十年前，比亚迪燃油车被多少消费者吐槽其缺点，谁能想到如今即将成为全世界最大的电动车生产商。而且即将占领中高端市场，野心不可不谓不大。日前，各个燃油车企为了回收现金流对旗下汽车品牌进行大幅降价，宣告着燃油车正在慢性死亡，各大传统车企应该要开始考虑后路了，存量市场就这么大，成本又没有优势，最终要么转型要么转行。出海转移产能也许是一条出路，但不能解决本质问题。在新能源领域，蔚来理想小鹏还在不断烧着投资人的钱，之间的竞争也逐渐走向白热化，但随着比亚迪不断在口碑和性能上迎来提升，这些车企的前途堪忧。而汽车市场最终的趋势则是国产品牌大幅替代外企，在新销售汽车中新能源汽车替代燃油车。</p>]]></content><author><name>Discount</name></author><category term="Diary" /><summary type="html"><![CDATA[2022年注定是不平凡的一年，从omicron 匆匆来袭为开端，又以最终病毒毒性变弱放松管控为结尾。而与疫情一波三折相呼应的是资本市场的风起云涌，这一年的波动率不可谓不大，如果有敏锐的观察力，能够把握进场时机，赚钱似乎不成问题。]]></summary></entry><entry><title type="html">Record what happened today</title><link href="https://dis-count.github.io/jekyll-theme-yat/daily/life/2023/01/18/Diary.html" rel="alternate" type="text/html" title="Record what happened today" /><published>2023-01-18T00:00:00+00:00</published><updated>2023-01-18T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/daily/life/2023/01/18/Diary</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/daily/life/2023/01/18/Diary.html"><![CDATA[<p>In this diary, I will record what happened on 18/1/2023.</p>
+
+<p>Take bus 11 to kung kau market. Then find the way to the community testing centres. It says disinfection time during 1.30 pm- 2 pm. When it is 2pm, I wait in line with booked sign. A man came to me, asked where am I going to? I said Chinese Mainland, then gave a note writing 150, TS(咽喉拭子).</p>
+
+<p>Then get in the hall, there is a toll counter. You can use Octupus, wechat, alipay or cash to pay. After that, you get a receipt. With this receipt, you need go to another counter to register your information with your HKID and permit card.(This sister is so kind, and explained why HKID is needed.) Only having finished all these procedure, you finally get to the testing area. This man treat me very well, his did the test very lightly.</p>
+
+<p>Then I take the subway to Kuang Tung station. Near here, there is an apple store. (APM) Many people are experiencing these products. I go to the counter to ask how I can buy an iPad. Then a man tell me to wait in line near the wall where I don’t notice just now. Then a young boy asked me what I need. After checking the stock of iPad, I asked him whether I can use the coupon. He tell me this coupon can only be used online. I didn’t know that before, that is so bad, I waste my trip to the station.</p>
+
+<p>After taking the subway to Cai Hung Station, I missed the exit. The correct one should be C1 and C2. In fact, I should learn the lesson from the experience going out the wrong exit, walking a long meaningless way. Then the bus 11 is near the exit.</p>
+
+<p>You should learn Cantonese, at least understand this language.</p>]]></content><author><name>Discount</name></author><category term="Daily" /><category term="Life" /><category term="Diary" /><summary type="html"><![CDATA[In this diary, I will record what happened on 18/1/2023.]]></summary></entry><entry><title type="html">Some mistakes should be avoided during research</title><link href="https://dis-count.github.io/jekyll-theme-yat/paper/2022/12/30/Mistakes-in-research.html" rel="alternate" type="text/html" title="Some mistakes should be avoided during research" /><published>2022-12-30T00:00:00+00:00</published><updated>2022-12-30T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/paper/2022/12/30/Mistakes-in-research</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/paper/2022/12/30/Mistakes-in-research.html"><![CDATA[<ol>
+  <li>Some thoughts are so naive. You should find some ideas from the literature. Then add the novelty.</li>
+</ol>
+
+<p>For example, the greedy commonly will not be the optimal policy, otherwise this problem will be super easy. Someone must find and publish it already.</p>
+
+<ol>
+  <li>Notice the size of the problem. If it is very small, then using the solver is enough.</li>
+</ol>
+
+<p>For example, column generation is used to solve the large-scale problem, if we focus on the small-size problem, there is no need to use it.</p>
+
+<ol>
+  <li>Try to use the numerical results to prove your idea. Most of your methods can be verified or disproved with the aid of computer, do not show it by your hand.</li>
+</ol>]]></content><author><name>Discount</name></author><category term="Paper" /><category term="Research" /><summary type="html"><![CDATA[Some thoughts are so naive. You should find some ideas from the literature. Then add the novelty.]]></summary></entry><entry><title type="html">Some phases Ⅱ</title><link href="https://dis-count.github.io/jekyll-theme-yat/english/2022/12/28/Words2.html" rel="alternate" type="text/html" title="Some phases Ⅱ" /><published>2022-12-28T00:00:00+00:00</published><updated>2022-12-28T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/english/2022/12/28/Words2</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/english/2022/12/28/Words2.html"><![CDATA[<p>abject</p>
+
+<p>orchard</p>
+
+<p>curate</p>
+
+<p>ramp up</p>
+
+<p>purge</p>
+
+<p>lay sewer pipes</p>
+
+<p>unscathed</p>
+
+<p>secrecy</p>
+
+<p>front and center</p>
+
+<p>Closed-circuit television</p>
+
+<p>surveillance</p>
+
+<p>vigilance</p>
+
+<p>Weibo, Chinese equivalent of twitter</p>
+
+<p>scrapped</p>
+
+<p>directive</p>
+
+<p>rhetoric</p>
+
+<p>Triennial  三年一次</p>
+
+<p>fireside chat 炉边会谈</p>
+
+<p>fit the bill   符合要求</p>
+
+<p>accredited  官方认可的</p>
+
+<p>cortex  cortical 大脑皮层  皮层的</p>
+
+<p>malaise (广泛存在的)难以捉摸的问题，无法描述的问题;莫名的不适(或不快、不满等)</p>
+
+<p>ammunition  弹药;(辩论中可攻击对方的)信息，事实，炮弹</p>
+
+<p>cede</p>
+
+<p>atrocity</p>
+
+<p>tatter</p>
+
+<p>rampant</p>
+
+<p>clamp down dissent  clampdown</p>
+
+<p>derail crackdown</p>
+
+<p>soapbox   get/be on your soapbox</p>
+
+<p>courteous</p>
+
+<p>advocacy</p>
+
+<p>council</p>
+
+<p>sobriety  清醒;冷静;未醉;持重</p>
+
+<p>surreal</p>
+
+<p>autograph  亲笔签名</p>
+
+<p>pervert</p>
+
+<p>plop down  坐下</p>
+
+<p>crackling</p>
+
+<p>tribunal  特别法庭</p>
+
+<p>lucrative</p>
+
+<p>comms outage  通信中断</p>
+
+<p>expedite</p>
+
+<p>snail mail</p>
+
+<p>skit  小品;幽默短文;滑稽短剧(常用模仿手法)</p>
+
+<p>discernible  可辨的;看得清的;辨别得出的</p>
+
+<p>incessantly  不停地</p>
+
+<p>fallout</p>
+
+<p>Autocracy/ Democracy</p>
+
+<p>precarious  不稳定的</p>
+
+<p>fertility rate</p>
+
+<p>bcoz/cuz: because</p>
+
+<p>accolade/compliment</p>
+
+<p>for perusal  以供阅读</p>
+
+<p>en route  在途中</p>
+
+<p>out of capital  资金不足</p>
+
+<p>culinary  烹饪的</p>
+
+<p>flour batter  面糊；击球手</p>
+
+<p>pickle  泡菜</p>
+
+<p>twang  n. 鼻音(通常指方言);(乐器等的)拨弦声 v. 弹拨;(使)发出弹拨声，发出嘣的一声</p>
+
+<p>rockmelon/ cantaloupe</p>
+
+<p>cut through fattiness  解腻</p>
+
+<p>If you have the drip, it means you have swagger, especially in how you look.</p>
+
+<p>beanie  无檐小便帽</p>
+
+<p>pylon 电缆塔</p>
+
+<p>candle wick 灯芯</p>
+
+<p>get on sb’s wick  激怒某人</p>
+
+<p>flick through sth  1. 浏览；草草翻阅 2. 快速浏览，不停地变换（电视频道）</p>
+
+<p>outpost  前哨基地</p>
+
+<p>spinach  菠菜</p>
+
+<p>payload  有效载荷，装载量</p>
+
+<p>ravishing</p>
+
+<p>drape  窗帘</p>
+
+<p>catch my drift = did you get me?</p>
+
+<p>per se  本身，本质上</p>
+
+<p>on probation  观察期  (academic~) 留校察看</p>
+
+<p>overhaul 大检修</p>
+
+<p>and so on and so forth</p>
+
+<p>trotter 猪蹄</p>
+
+<p>measly  微薄的</p>
+
+<p>bursary 奖学金</p>
+
+<p>get off the ground</p>
+
+<p>coaster  玻璃杯垫；航行于沿海港口间的轮船</p>
+
+<p>expedite 加速</p>
+
+<p>is this worth the hype?</p>
+
+<p>prurient  淫荡的, 好色的;下作的, 淫亵的;引起淫欲的</p>
+
+<p>city hopping  跳城</p>
+
+<p>hit the fun  出麻烦，陷入困境</p>
+
+<p>hang in the balance  悬而未决；安危未定</p>
+
+<p>get over yourself 别自以为是</p>
+
+<p>ruffian  暴徒;恶棍   adj.凶恶的</p>
+
+<p>lunatic  疯子，狂人  maniac</p>
+
+<p>nonentity  n.无足轻重的人;无专长的人;无成就的人</p>
+
+<p>vivacious  可爱的;活泼的;动人的</p>
+
+<p>de facto  adj. 实际上存在的(不一定合法)  adv. 实际上，事实上</p>
+
+<p>all-out  全力以赴的</p>
+
+<p>pay state visit  进行国事访问</p>
+
+<p>shore up  支撑;支持;加强</p>
+
+<p>morsel  少量，一块(食物)</p>
+
+<p>carb</p>
+
+<p>backdrop  (事态或活动的)背景;(舞台的)背景幕布;(事件发生时)周围陪衬景物</p>
+
+<p>extricate  解脱;解救;救出;(使)摆脱，脱离，脱出;挣脱</p>
+
+<p>moreish  (食物、饮料滋味好)令人想再吃的</p>
+
+<p>push through  强行通过，力推下通过（法律等）</p>
+
+<p>knacker 使筋疲力尽;使疲惫不堪;使受伤;破坏;损害  n.屠马业者;收买废屋船业者</p>
+
+<p>lad  男孩儿;少年;男青年;小伙子;伙伴;哥们儿;(精力旺盛的)放荡小伙子;马夫</p>
+
+<p>wanker  无能者，下流坯子(尤用以侮辱男性)</p>
+
+<p>misnomer  用词不当</p>
+
+<p>sequoia  红衫</p>
+
+<p>contiguous  邻近的</p>
+
+<p>brick and mortar  砖和砂浆  实际存在的；实体的 ~store 实体店</p>
+
+<p>confiscate  vt. 没收;缴获;(尤指作为惩罚)把…充公  adj. 被没收的，被充公的;被没收了财产的</p>
+
+<p>undeterred  adj.  未受阻的;顽强的;坚毅的;不屈不挠的</p>
+
+<p>irreconcilable  adj. 不能和解的，不能调和的，无法化解的，无法消除的，势不两立的;反对的;不相容的，不兼容的;（思想、观点）相对立的，相反的，矛盾的</p>
+
+<p>squirm  蠕动;(因紧张、不舒服等)动来动去，来回扭动，坐卧不宁;十分尴尬;羞愧难当;无地自容 n. 蠕动;折腾;绳索的扭曲</p>
+
+<p>sward  草皮</p>
+
+<p>on fleek  美呆了</p>
+
+<p>flex on  炫耀</p>
+
+<p>salty  不悦；酸</p>
+
+<p>extra 夸大的</p>
+
+<p>squad  死党；小队</p>
+
+<p>clout  影响力，名气</p>
+
+<p>(straight) fax(=facts)  真相，事实</p>
+
+<p>spit fax  叙说真相，事实 = drop mad knowledge 分享知识</p>
+
+<p>Filter bubble = social media bubble</p>
+
+<p>swole(from swollen)  超级壮的、巨巨的</p>
+
+<p>swolfie = swole + selfie</p>
+
+<p>zhuzh(zhoosh) up 让…更有趣，更有吸引力</p>
+
+<p>thirsty   渴求赞同，关注</p>
+
+<p>twerk = twist + jerk  电臀舞</p>
+
+<p>jackpot  （扑克牌戏中须有人持有一对J牌以上的强牌方可开局下注的）累积赌注;（使吃角子老虎机吐出全部硬币归中奖者所有的）满堂红机关;（彩票等的）头奖，最高奖;（若干赌博中的）累加奖金;大笔收入;意外的巨额奖金;意外的大成功;十分成功;〈美方〉困境    adj. 累计赌注的;头奖的;大笔收入的</p>
+
+<p>jack  n. 千斤顶，起重器(换车轮时常用);(电)插孔，插座，插口;塞孔;J牌;杰克;靶子球;抛接子游戏（儿童游戏）;丝毫，根本，一点（不） v. （用千斤顶）顶起;（用千斤顶）张拉（钢丝）;离开;停止，放弃;增加;提高
+adj. (对…)厌倦，厌烦</p>
+
+<p>sovereignty  主权;最高统治权;最高权威;独立自主</p>
+
+<p>proctor 监考人员</p>
+
+<p>give the floor  请…发言;给予发言权</p>
+
+<p>pomelo  柚子</p>
+
+<p>make a scene： to behave in a loud, angry way in public</p>
+
+<p>reciprocally 相互作用</p>
+
+<p>quintessential  典范的;典型的;本质的;精髓的</p>
+
+<p>mishap  不幸;晦气;小事故</p>
+
+<p>gravy  (调味)肉汁;意外之财;飞来福</p>
+
+<p>chin up 引体向上/push up/sit up</p>
+
+<p>hot off the press  最新的</p>
+
+<p>hit the ground running: start something and proceed at a fast pace with great enthusiasm.</p>
+
+<p>oblivious  忘却的；未注意，不知道</p>
+
+<p>illicit trade  非法贸易</p>
+
+<p>confiscate  没收，充公</p>
+
+<p>seizure 没收;夺取;起获;充公;起获的赃物;没收的财产;占领;控制;(疾病，尤指脑病的)发作</p>
+
+<p>savvy  有见识的;懂实际知识的;通情达理的</p>
+
+<p>stricken area  受灾区； stricken 受煎熬的;患病的;遭受挫折的;遭受…的;受…之困的</p>
+
+<p>massacre</p>
+
+<p>mesmerize</p>
+
+<p>flashback</p>
+
+<p>mung bean  绿豆</p>
+
+<p>pick up nickle in front of a freight train</p>
+
+<p>insolvent  无力偿付债务的;破产的</p>
+
+<p>capstone</p>
+
+<p>foreclosure  丧失抵押品赎回权;抵押品赎回权的取消</p>
+
+<p>job = position = post</p>
+
+<p>mortify</p>
+
+<p>labyrinth</p>
+
+<p>trifle with  （不能）轻慢;（不可）小看;（不可）怠慢</p>
+
+<p>toot one’s own horn</p>
+
+<p>beige  浅褐色的;米黄色的</p>
+
+<p>grenade  榴弹</p>
+
+<p>perm  烫发，卷发</p>
+
+<p>后缀 “-ish”，在非正式口语中，我们可以把它放在一些形容词的后面，意思是 “有点……”，“……左右”。它也可以单独使用，通常用来回答他人的问题。另外，“-ish” 也可以用在表示时间、年龄等的数字后面，意思是 “大约，左右”。</p>
+
+<p>ukulele   saxophone</p>
+
+<p>bust up  断送；毁灭  吵翻；分手</p>
+
+<p>pencil in 记下名字</p>
+
+<p>in plain sight</p>
+
+<p>bask</p>
+
+<p>off the charts</p>
+
+<p>bankroll</p>
+
+<p>infraction</p>
+
+<p>take the odds: to accept a bet with favourable odds.</p>
+
+<p>pull string  暗中前线，走后门</p>
+
+<p>buttress  n. 扶壁;支墩 vt. 支持;给…以力量</p>
+
+<p>perjure  作伪证</p>
+
+<p>back out  食言，违约，退出</p>
+
+<p>snoop  窥探;打探;探听</p>
+
+<p>penthouse 顶层豪华公寓;阁楼套房</p>
+
+<p>expeditious  迅速;迅速而有效的</p>
+
+<p>lefty  左派分子;左撇子 righty</p>
+
+<p>bet the farm  孤注一掷</p>
+
+<p>confound  使困惑惊讶;使惊疑;证明…有错;击败，战胜(敌人)</p>
+
+<p>To be on the clock is an idiom meaning “working” or “getting paid.” It can also refer to the amount of time a taximeter has on the clock or the amount of time left in a sporting match.</p>
+
+<p>dab  轻触，轻拍  轻涂；轻敷</p>
+
+<p>sweatshop  血汗工厂</p>
+
+<p>ransack  洗劫;(为找东西)把…翻腾得乱七八糟</p>
+
+<p>naught  adj. 无价值的  adv. 决无  n. 无;无价值;零;坏人</p>
+
+<p>veritable   真实的;名副其实的;不折不扣的;十足的</p>
+
+<p>minefield  雷区;布雷区;危机四伏的局面;充满潜在危险的形势</p>
+
+<p>remedial  旨在解决问题的;补救的;纠正的;(为后进学生)补习的，辅导的</p>
+
+<p>vainglorious  自负的;自命不凡的;自吹自擂的 Pretentious  pompous  snobbish</p>
+
+<p>buffoon = joker</p>
+
+<p>vial 小瓶</p>
+
+<p>panache  神气十足;潇洒气质</p>
+
+<p>take a hint   领会暗示</p>
+
+<p>play it by ear  见机行事</p>
+
+<p>backdrop</p>
+
+<p>demeanour  外表;风度;行为;举止</p>
+
+<p>perk  额外待遇;(工资之外的)补贴;津贴  v. 使振作;打扮;竖起</p>
+
+<p>epitome  典型;典范</p>
+
+<p>succulent  汁多味美的;肉质的;多汁的 n. 肉质植物</p>
+
+<p>marrow  西葫芦;骨髓，髓;精华，活力</p>
+
+<p>drench  淋湿;使湿透   n.  弄湿;雨淋;浸渍液;(制革时浸泡熟皮的)脱灰水</p>
+
+<p>starch  淀粉;含淀粉的食物;(浆衣服、床单等用的)淀粉浆  vt. 把(衣服、床单等)浆一浆</p>
+
+<p>drool  垂涎;淌口水;(对…)垂涎欲滴，过分痴迷</p>
+
+<p>intestine  肠</p>
+
+<p>savoury  咸味的;咸口的;好吃的;好闻的;香的;美味的</p>
+
+<p>yap  吠叫;哇哩哇啦地胡扯</p>
+
+<p>poster child   (为慈善等目的)出现在海报上的儿童;代表人物;典型</p>
+
+<p>enamor = attract</p>
+
+<p>punitive  惩罚性的;刑罚的;处罚的;(租税等)苛刻的</p>
+
+<p>single out  单独挑出;特别选出</p>
+
+<p>disincentive  起抑制作用的事物;遏制因素  adj. (对生产等)起阻碍作用的</p>
+
+<p>commiserate  同情</p>
+
+<p>lurk   潜伏;(尤指为做不正当的事而)埋伏;潜在;隐藏着;潜水”;隐身(在聊天室等阅读在线讨论但自己不参与其中)   n. 诡计;妙计;花招</p>
+
+<p>wimp  n. 懦夫;窝囊废  v. wimp out 因胆小而退出</p>
+
+<p>docket  (载明包裹、发货、完工等情况的)单据，标签;备审案件目录表;法院积案清单;议程</p>
+
+<p>exacerbate  加剧;使恶化;使加重</p>
+
+<p>crux  n.  症结;(难题或问题的)关键;最难点</p>
+
+<p>flippant  轻浮的;轻率的</p>
+
+<p>due diligence  应有的注意，尽职调查</p>
+
+<p>galactic  银河的;星系的</p>
+
+<p>cigar butt</p>
+
+<p>resounding  巨大的;令人瞩目的;响亮的;嘹亮的;回响的 v. 回响;回荡;回荡着声音;回响着声音</p>
+
+<p>nemesis  报应;应得的惩罚;不可避免的失败</p>
+
+<p>citron</p>
+
+<p>chime  n.  (尤指)钟声;铃声  v. 报时;敲;鸣</p>
+
+<p>skit 小品</p>
+
+<p>pull the rug (out) from under (someone)</p>
+
+<p>detest  厌恶;憎恨;讨厌</p>
+
+<p>gig  现场演奏会，现场演唱会;</p>
+
+<p>facade   外观;(建筑物的)正面，立面;(虚假的)表面，外表</p>
+
+<p>prestigious</p>
+
+<p>banter  调侃;逗乐;(和某人)开玩笑  n. (善意的)玩笑，打趣</p>
+
+<p>rapport  亲善;融洽;和谐</p>
+
+<p>pragmatics  用语 vs  grammar</p>
+
+<p>muster up (courage)  鼓起，召集，振作</p>
+
+<p>jolt  颠簸;(使)震动;使受到震惊(而采取行动);唤醒;使觉醒  n. 颠簸;震动;摇晃;一阵强烈的感情(尤指震惊或惊讶)</p>
+
+<p>drill something into someone: to tell something to someone again and again until the person knows it.</p>
+
+<p>bedridden, disease-ridden</p>
+
+<p>township</p>
+
+<p>disown</p>
+
+<p>liquor  酒;烈性酒;含酒精饮料 vt. 浸泡;喝酒</p>
+
+<p>hangover  宿醉</p>
+
+<p>roll back 逐渐减少;逐步结束;降低，削减（价格、税收、收益等）</p>
+
+<p>statewide</p>
+
+<p>over the course of the next few years.</p>
+
+<p>learn something the hard way： to discover what you need to know through experience or by making mistakes</p>
+
+<p>kick back： relax</p>
+
+<p>tandem  双人自行车 in tandem (with sb/sth) 并行；并驾齐驱；同时实行</p>
+
+<p>impertinent  粗鲁无礼的;不敬的</p>
+
+<p>a walk in the park:  something that is very easy to do, and usually pleasant</p>
+
+<p>compound  加重 恶化</p>
+
+<p>crucify  把(某人)钉(或捆)在木十字架上处死;严厉批评;严惩;折磨</p>
+
+<p>pantry  n.  食品贮藏室;食品贮藏柜</p>
+
+<p>synergy  协同作用;协同增效作用</p>
+
+<p>torment/ torture</p>
+
+<p>gavel  n. 木槌;(会议主席、拍卖商或法官用的)小槌</p>
+
+<p>filial piety  孝顺</p>
+
+<p>cove  小海湾;家伙;汉子;小子  vi. 使内凹;使成拱形;使成穹形;作成穹顶内凹;成拱形</p>
+
+<p>asylum  n.  庇护;(政治)避难;精神病院</p>
+
+<p>mascot  n.  吉祥物</p>
+
+<p>exorbitant  过高的;高得离谱的</p>
+
+<p>revamp  改造;修改;改变;(通常指)改进外观，翻新  n. 改进;换新鞋面</p>
+
+<p>refurbish  整修;再装修;清理装修</p>
+
+<p>paparazzo  狗仔队;猎奇名流的摄影记者</p>
+
+<p>outcast  被抛弃者，被排斥者; 被遗弃的</p>
+
+<p>calf  小腿肚;小牛;牛犊;(象、鲸等的)崽，幼兽</p>
+
+<p>ponytail  马尾辫</p>
+
+<p>harpoon  n. 渔猎标枪;鱼叉  vt. 用鱼叉叉</p>
+
+<p>almond  杏仁  oat 燕麦</p>
+
+<p>tome  (尤指理论性的)大部头书，巨著</p>
+
+<p>chronicle  把…载入编年史;按事件发生顺序记载</p>
+
+<p>expatriate  外派人员； 移居国外的 （expat)</p>
+
+<p>negligible</p>
+
+<p>bristle  n. 短而硬的毛发;刚毛;刷子毛  vi. (对某人的言行)大为恼怒;被激怒;(背部或颈部的毛因惊吓或发怒)竖起，耸起</p>
+
+<p>agnostic  n.  不可知论者(认为上帝存在与否是不可知的)  adj. 不可知论（者）的</p>
+
+<p>generosity  n.  慷慨;大方;宽宏大量</p>
+
+<p>patter  n. 吧嗒吧嗒的响声;急速的轻拍声;(为推销或娱乐的)不间断说话  vi. 发出轻快的拍打声;轻盈地走</p>
+
+<p>balustrade 栏杆</p>
+
+<p>porch  n. 门廊;门厅</p>
+
+<p>hit a snag  遇到意外困难</p>
+
+<p>smack  用巴掌打;掴;啪的一声使劲放(或扔、甩等);使劲碰(或撞)</p>
+
+<p>contigent  代表团;(志趣相投、尤指来自同一地方的)一组与会者;(军队的)分遣队;小分队  adj. 依情况而定的</p>
+
+<p>hegemony  支配权;霸权  hegemonic</p>
+
+<p>binge  n. (短时间的)狂热行动，大吃大喝  vi. 大吃大喝;狂欢作乐</p>
+
+<p>blister  水泡;(皮肤上摩擦或烫起等的)水疱;(金属、油漆过的木头或其他表面上的)气泡  v. (使)起疱;(使表皮等)爆裂;猛烈抨击;严厉批评</p>
+
+<p>riveting  引人入胜的，吸引人的，令人着迷的;饶有兴味的;极其有趣的;非常动听的;激动人心的 
+rivet v. 铆接;吸引住;(用铆钉)固定</p>
+
+<p>tough cookie  n.  不动感情的人;不易受伤害的人;硬汉</p>
+
+<p>mire  n. 泥潭;泥沼  v. (使)陷于泥泞;(使)陷入困境</p>
+
+<p>underworld  n. 黑社会;黑道;犯罪集团;阴间;冥府;阴曹地府</p>
+
+<p>no cap  没骗人
+to cap about something」=「to lie about something</p>
+
+<p>wack 非常糟糕的、不好的</p>
+
+<p>slay  Nailed it!  （搞定了、成功了！）」、「Killed it! （做得好！）</p>
+
+<p>extenuating  adj. 情有可原的;可减轻的  v. 减轻（罪行、过错）；为…找借口；使人原谅;低估；藐视</p>
+
+<p>assembly/ dismissal  venue</p>
+
+<p>round trip  来回旅行;往返旅程</p>
+
+<p>marinate  v. 腌，浸泡(食物)</p>
+
+<p>quirk  怪癖;怪异的性格(或行为);(尤指偶发的)怪事，奇事</p>
+
+<p>beige 浅褐色的;米黄色的</p>
+
+<p>hubcap  (轮)毂盖</p>
+
+<p>identikit  n.（供证人辨认罪犯的）人像拼片；拼图辨认嫌疑犯 adj. （用旧材料）拼凑成的；老一套的；普通无奇的；公式化的；规格化的</p>
+
+<p>tart 尖酸的;刻薄的;酸的;酸涩的;辛辣的  n.  骚货;甜果馅饼;放荡的女人;妓女;野鸡 vt. 将某人打扮得妖艳;将某物装饰得俗气</p>
+
+<p>look the other way  佯作不知;装作没看见</p>
+
+<p>Annuity  养老金</p>
+
+<p>matter of course  理所当然的事；当然可行之事</p>
+
+<p>flabbergast  大吃一惊;使目瞪口呆</p>
+
+<p>skewer (烹饪用)串肉扦</p>]]></content><author><name>Discount</name></author><category term="English" /><category term="Commonly used" /><summary type="html"><![CDATA[abject]]></summary></entry><entry><title type="html">Python tips</title><link href="https://dis-count.github.io/jekyll-theme-yat/programming/2022/12/02/Python-tips.html" rel="alternate" type="text/html" title="Python tips" /><published>2022-12-02T00:00:00+00:00</published><updated>2022-12-02T00:00:00+00:00</updated><id>https://dis-count.github.io/jekyll-theme-yat/programming/2022/12/02/Python-tips</id><content type="html" xml:base="https://dis-count.github.io/jekyll-theme-yat/programming/2022/12/02/Python-tips.html"><![CDATA[<h2 id="作用域">作用域</h2>
+
+<ol>
+  <li>一切作用域都以代码块为单元</li>
+</ol>
+
+<p>代码块可以是 模块文件；函数体；class 定义； 交互式每行的命令； 脚本文件； 脚本命令； eval() and exec()</p>
+
+<ol>
+  <li>
+    <p>函数的声明过程中，所有涉及到变量i的作用域内都不会对i进行赋值，仅仅只是保存了这个i变量名，只有在调用函数的时候才会进行赋值操作。</p>
+  </li>
+  <li>
+    <p>Python 在启动的时候就在内存中预先为常用的较小整数值(-5到256)创建好了对象</p>
+  </li>
+  <li>
+    <p>函数的默认参数是在函数声明时进行赋值的</p>
+  </li>
+  <li>
+    <p>Python 是词法作用域</p>
+  </li>
+</ol>
+
+<ul>
+  <li>词法作用域是关联在编译期间的，对于函数来说就是函数的定义文本段的位置决定这个函数所属的范围。</li>
+  <li>动态作用域是关联在程序执行期间的，对于函数来说就是函数执行的位置决定这个函数所属的范围。</li>
+</ul>
+
+<p>赋值是对象引用</p>
+
+<p>可变对象：  列表、字典、集合  在赋值时，修改一个的值，另一个也会发生改变</p>
+
+<p>不可变对象：数字、字符串、元组  在赋值时会开辟新空间</p>
+
+<p>深、浅拷贝对不可变对象拷贝时，不开辟新空间，相当于赋值操作</p>
+
+<p>浅拷贝在拷贝时，只拷贝第一层中的引用，如果元素是可变对象，并且被修改，那么拷贝的对象也会发生变化</p>
+
+<p>深拷贝在拷贝时，会逐层进行拷贝，直到所有的引用都是不可变对象为止。</p>
+
+<p>Python 中有多种方式实现浅拷贝，copy模块的copy 函数 ，对象的 copy 函数 ，工厂方法，切片等。</p>
+
+<p>浅拷贝的优点：拷贝速度快，占用空间少，拷贝效率高</p>]]></content><author><name>Discount</name></author><category term="Programming" /><category term="Python" /><summary type="html"><![CDATA[作用域]]></summary></entry></feed>

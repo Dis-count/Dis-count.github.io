@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The application of the lazy constraints to solving the symmetric TSP problem. | Zikang Li</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="The application of the lazy constraints to solving the symmetric TSP problem." />
+<meta name="author" content="Discount" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://dis-count.github.io/jekyll-theme-yat/or/2021/11/26/lazy-constraint.html" />
+<meta property="og:url" content="https://dis-count.github.io/jekyll-theme-yat/or/2021/11/26/lazy-constraint.html" />
+<meta property="og:site_name" content="Zikang Li" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-26T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The application of the lazy constraints to solving the symmetric TSP problem." />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Discount"},"dateModified":"2021-11-26T00:00:00+00:00","datePublished":"2021-11-26T00:00:00+00:00","description":"Abstract","headline":"The application of the lazy constraints to solving the symmetric TSP problem.","mainEntityOfPage":{"@type":"WebPage","@id":"https://dis-count.github.io/jekyll-theme-yat/or/2021/11/26/lazy-constraint.html"},"url":"https://dis-count.github.io/jekyll-theme-yat/or/2021/11/26/lazy-constraint.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://dis-count.github.io/jekyll-theme-yat/feed.xml" title="Zikang Li" /><link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Zikang Li" src="assets/images/favicon.ico" onerror="this.style.display='none'">
+  Zikang Li
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger"><a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+
+
+
+
+
+<span class="page-link">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span></div>
+        </nav></div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">The application of the lazy constraints to solving the symmetric TSP problem.</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2021-11-26T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Nov 26, 2021
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 11 mins</span>
+  </p><div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#OperationResearch">#OperationResearch</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Project">#Project</a></div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>Abstract</p>
+
+<p>This project presents an overview of the lazy constraints and their application to the TSP problem. At first, I will give the description of the symmetric TSP and its most commonly formulation. After introducing the lazy constraints, I will use the standard TSP instances to test the effectiveness of lazy formulations.
+Then I will bring another formulation, MTZ formulation, in the symmetric TSP and explore its efficiency.
+Finally, I will design experiments to compare the above formulations and give the results.</p>
+
+<p>Introduction</p>
+
+<p>TSP problem was first mentioned by Hamilton, where the problem is to find the shortest Hamitonian cycle. Since then, solving all kinds of TSP problems has become a heated topic of research and with the increase of calculation power and the development of algorithms, some large TSP problems once considered intractable now can be solved almost optimally.\cite{pearce2019towards}</p>
+
+<p>Under this background, I am going to explore how and why the lazy constraint will be helpful in solving TSPs. Furthermore, I will compare it with another TSP formulation using time-based variables.</p>
+
+<p>% Solve the model with gurobi to verify the correctness and efficiency of the implementations</p>
+
+<p>This project is organized as follows. In section \ref{section-problem}, I will give the definition of the symmetric TSP problem, which have received a lot of attention in past decades. In section \ref{section-lazy}, I will discuss the important role of the lazy constraint in many fields of operation research probelms. In Section \ref{section-MTZ}, I will present another formulation, MTZ formulation. Finally, in Section \ref{section-result}, I will give the corresponding results with the designed experiments.</p>
+
+<p>Problem Description</p>
+
+<p>TSP problem can be defined as follows: for a given list of locations and the distances between each pair of them, one would like to find the shortest possible route that goes to each location once and returns to the origin location. In this project, I only consider the symmetric TSPs which assume that the distance of going from location $i$ to location $j$ is the same as going from location $j$ to location $i$. Besides, I use two-dimentions Euclidean distances. But one thing to mention is that the TSP model formulation is independent of the way in which the distances are determined.</p>
+
+<p>\subsection{Symmetric TSP Formulation}
+There are multiple ways to formulate symmetric TSP as an integer programming problem, I will adopt the most frequently used.
+At first, there is a set of locations $N$. Take $d_{ij}$ as the distance from location $i\in N$ to location $j \in N$. We also need to define the decision variables $x_{ij} \in {0,1}$, this variable is equal to 1 if we decide to connect location $i$ with location $j$. Otherwise, the decision variable is equal to 0. Then we can have the following integer programming program:</p>
+
+\[\min &amp; \sum_{i \in N} \sum_{j \in N \atop j&lt;i} d_{i j} x_{i j} \label{obj} \\
+\mbox{s.t.}
+&amp;\sum_{j \in N} x_{i j}=2, \forall i \in N \label{sTSP2} \\
+&amp;x_{i j}=x_{j i}, \forall i \in N, \forall j \in N \label{sTSP3} \\
+&amp;x_{i i}=0, \forall i \in N \label{sTSP4}\\
+&amp;\sum_{i \in S} \sum_{j \in S \atop j&lt;i} x_{i j} \leq|S|-1, \forall S \subset N, S \neq \emptyset \label{sTSP5}\\
+&amp; x_{i j} \in\{0,1\},\forall i \in N, \forall j \in N\]
+
+<p>The objective function (\ref{obj}) is to minimise the total distance of a route. A route is a sequence of locations where the person visits each one only once and returns to the starting location.
+Constraints (\ref{sTSP2}) ensure that every node is
+connected to exactly two nodes, and constraints (\ref{sTSP3}) make the variables symmetric, ensuring that the nodes $i$ and $j$ are connected. Constraints (\ref{sTSP4}) restrict nodes connecting to themselves, and
+constraints (\ref{sTSP5}) are to prevent disconnected sub-tours from appearing in the solution, which are also known as the subtour elimination constraints.</p>
+
+<p>In general, if the number of cities of the TSP is $n$, then the possible number of routes is $n!$. Since there are an exponential number of constraints $2^{n-1}$ to eliminate sub-tours, we use lazy constraints to dynamically eliminate those tours.</p>
+
+<p>Lazy Constraint Fashion
+Note that constraints (\ref{sTSP5}) contain exponential constraints, thus a more efficient way to solve the TSP is to start without constraints (\ref{sTSP5}), and each time a new integer solution is found, inspect it for sub-tours. If a sub-tour is found, add the relevant constraint to the starting problem, and continue to search another solution.</p>
+
+<p>As we know, the lazy constraint is used to add the constraints when we get an integer solution.
+This method is very similar to row generation, the key point is how to find the core constructure of the problem and put the tedious part into the lazy constraint pool. Thus, the efficiency of lazy constraints depends on which set of constraints is considered as the lazy one.
+% We have to contain the useful/necessary constructure of this problem.</p>
+
+<p>% master problem/ sub problem.</p>
+
+<p>Miller-Tucker-Zemlin Constraints</p>
+
+<p>The presented formulation is obviously not the only way of solving the TSP, there are other formulations that do not have an exponential number of constraints. For example, the following constraints (\ref{MTZ5}) are time-based, which means that $z_i$ indicates the ordering of node $i$. In fact, the set of constraints is a variation of MTZ constraints, due to the authors who first proposed them.\cite{miller1960integer}</p>
+
+<p>However, this formulation requires the addition of auxiliary variables to enforce the sequential connection of the tour, which still adds more complexity despite the avoidance of exponential constraints. The corresponding integer programming problem is presented below:</p>
+
+<p>\begin{alignat}{2}
+\min &amp; \sum_{i \in N} \sum_{j \in N} d_{i j} x_{i j} \label{obj2} <br />
+\mbox{s.t.}
+&amp;\sum_{j \in N} x_{i j}=1, \forall i \in N \label{MTZ2} <br />
+&amp;\sum_{j \in N} x_{j i}=1, \forall i \in N \label{MTZ3} <br />
+&amp;x_{i i}=0, \forall i \in N \label{MTZ4}<br />
+&amp;z_{j} \geq z_{i}+d_{i j}-M\left(1-x_{i j}\right), \forall i \in N, \forall j \in N \backslash{0} \label{MTZ5}<br />
+&amp; x_{i j} \in{0,1}, z_{i} \geq 0, \forall i \in N, \forall j \in N
+\end{alignat}</p>
+
+<p>Results</p>
+
+<p>In this section, I present the result of applying lazy constraints fashion to the symmetric TSP. I conduct experiments using a Windows 10 PC with an Intel Core i9-10900 running at 2.80GHz and 64 RAM. All the experiments are implemented with Python 3.9 and the solver Gurobi 9.1.</p>
+
+<p>For the initial experiments, I designed a method to read a benchmark file from \url{http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/}.
+Then I use the standard datasets to test the correctness of the implementation of the lazy constraint.</p>
+
+<p>Just use two sets of data as examples.
+For berlin52.tsp, we have the optimal value 7585,
+the optimal route is [0, 48, 31, 44, 18, 40, 7, 8, 9, 42, 32, 50, 10, 12, 13, 46, 25, 26, 27, 11, 24, 3, 5, 14, 4, 23, 47, 37, 36, 39, 38, 35, 34, 33, 43, 45, 15, 28, 49, 19, 22, 29, 51, 1, 6, 41, 20, 16, 2, 17, 30, 21, 0].
+Although the result is different from the optimal solution presented on the website, I use MTZ formulation to get the same results as the lazy formulation.
+And I use the given optimal tour to calculate the minimal cost which is larger than my optimal value.
+Maybe the original data, berlin52.tsp, has to be tranformed in some way.
+But for att48.tsp, we have the same result under these two formulations as the optimal solution.</p>
+
+<p>Besides, the two formulations will always give the same result. Thus, I have reasons to believe the lazy formulations will give the optimal solution under the simplest assumption.(Two-dimentions Euclidean Distance)</p>
+
+<p>Then, I develop 10 random TSP instances, each with 30,40,50 locations, respectively. The points are uniformly selected from the square area $([0,100], [0,100])$ and the distances between locations are euclidean. Set the time threshold to be 3600s and the times in the following tables are the average of ten instances.The time consumed by two formulations is showed below.
+\(\begin{array}{cccc}
+\text { Formulation-location number} &amp; \text {Time (s)} &amp; \text {Max Time(s)} &amp; \text {Min Time (s)} \\
+\hline \text {Lazy-30} &amp; 0.073 &amp; 0.1 &amp; 0.02 \\
+\text {MTZ-30} &amp; 3.84 &amp; 17.96 &amp; 0.31 \\
+\text {Lazy-40} &amp; 0.09 &amp; 0.19 &amp; 0.04 \\
+\text {MTZ-40} &amp; 23.02 &amp; 121.52 &amp; 1.26\\
+\text {Lazy-50} &amp; 0.22 &amp; 0.39  &amp;  0.12\\
+\text {MTZ-50} &amp; 958.96 &amp; 3600 &amp;  2.55\\
+\text {Lazy-100} &amp; 2.25 &amp; 5.24 &amp;  0.92\\
+\hline
+\end{array}\)</p>
+
+<p>It is clear that Lazy formulation is more efficient.
+Another thing to mention is that though the number of node is the same, the time spent by MTZ is highly dependent on the given initial locations. For example, for the case of MTZ-40, the largest time can be 121.52 and the shortest time is 1.26. While the lazy constraint is more stable.</p>
+
+<p>The third experiment is that I set some rooted and regional TSP instances to see if the cluster points distribution will affect the complexity of TSP.
+The center points are randomly generated in the square area $([10,90],[10,90])$, then for each center points $(x,y)$, generate several locations in the region $(x\pm 10, y \pm 10)$.
+\(\begin{array}{cccc}
+\text {Formulation-(center,total)} &amp; \text {Time (s)} &amp; \text {Max Time(s)} &amp; \text {Min Time (s)} \\
+\hline \text {Lazy-(5,30)} &amp; 0.068 &amp; 0.13 &amp; 0.03 \\
+\text {MTZ-(5,30)} &amp; 1281.34 &amp; 3600 &amp; 12.12 \\
+\text {Lazy-(5,40)} &amp; 0.21 &amp; 0.53 &amp; 0.05 \\
+\text {MTZ-(5,40)} &amp; 2540.33 &amp; 3600 &amp; 112.91\\
+\text {Lazy-(5,50)} &amp; 0.52 &amp; 1.12  &amp;  0.22\\
+\text {Lazy-(5,100)} &amp; 2.70 &amp; 3.65 &amp;  1.97\\
+\hline
+\end{array}\)</p>
+
+<p>The results show that the cluster distribution significantly increases the complexity of TSP.
+This phenomenon can be explained by the fact that the cluster points are easy to form a cycle, which will increase the possibility of forming sub-tours.</p>
+
+<p>Through the experiments, we can see that the complexity of MTZ is still high despite the polynomial constraints in (\ref{MTZ5}). Could we embed the similar idea of lazy constraints in the MTZ formulation? This reference gives us the answer and the corresponding result.\cite{pearce2019towards} In this way, the MTZ formulation will be transformed into a Benders decomposition. Although the Benders formulation will shorten the calculation time, the efficiency is still low compared with the lazy formulation. The following results can be found here \cite{pearce2019towards}.</p>
+
+\[\begin{array}{cccc}
+\text { Formulation } &amp; \text { Time (s) } &amp; \text { Nodes } &amp; \text { Lazy Constraints } \\
+\hline \text { Lazy } &amp; 0.46 &amp; 1135 &amp; 107 \\
+\text { MTZ } &amp; 142.17 &amp; 145209 &amp; - \\
+\text { Benders } &amp; 115.23 &amp; 42690 &amp; 2554 \\
+\hline
+\end{array}\]
+
+<p>Hence, I think that is why Gurobi will take the Lazy constraint as an example to solve the TSP.\cite{Gurobi} This method is efficient indeed.</p>
+
+<p>The related codes, data and results about this project
+can be found at this link, <a href="https://github.com/Dis-count/TSP_lazy">my repository</a>.</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav"><span></span><a class="next" href="/jekyll-theme-yat/blog/2021/12/14/ES-final.html" title="2021 ES Final Exam Content">2021 ES Final Exam Content</a></div><div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/jekyll-theme-yat/programming/2022/08/08/Leetcode_framework.html" title="2021 ES Final Exam Content">Leetcode Framework with Java</a></li><li><a class="post-link" href="/jekyll-theme-yat/programming/2022/06/27/Some-mistakes-in-latex.html" title="2021 ES Final Exam Content">Mistakes in LaTex</a></li><li><a class="post-link" href="/jekyll-theme-yat/jekyll/2022/06/21/How-to-setup.html" title="2021 ES Final Exam Content">How to run Jekyll</a></li><li><a class="post-link" href="/jekyll-theme-yat/programming/2022/09/10/Python-skills.html" title="2021 ES Final Exam Content">Skills frequently used in Python</a></li></ul>
+    </div><div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">٩(^ᴗ^)۶</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner"><div>Discount's Blog <span class="copyleft">&copy;</span> 2021-2024 Discount</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/jekyll-theme-yat/feed.xml">via RSS</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

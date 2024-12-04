@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Some useful LaTex commands you could define | Zikang Li</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Some useful LaTex commands you could define" />
+<meta name="author" content="Discount" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="LaTeX Reference for Probability" />
+<meta property="og:description" content="LaTeX Reference for Probability" />
+<link rel="canonical" href="https://dis-count.github.io/jekyll-theme-yat/programming/2022/09/03/Latex-Probability.html" />
+<meta property="og:url" content="https://dis-count.github.io/jekyll-theme-yat/programming/2022/09/03/Latex-Probability.html" />
+<meta property="og:site_name" content="Zikang Li" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Some useful LaTex commands you could define" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Discount"},"dateModified":"2022-09-03T00:00:00+00:00","datePublished":"2022-09-03T00:00:00+00:00","description":"LaTeX Reference for Probability","headline":"Some useful LaTex commands you could define","mainEntityOfPage":{"@type":"WebPage","@id":"https://dis-count.github.io/jekyll-theme-yat/programming/2022/09/03/Latex-Probability.html"},"url":"https://dis-count.github.io/jekyll-theme-yat/programming/2022/09/03/Latex-Probability.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://dis-count.github.io/jekyll-theme-yat/feed.xml" title="Zikang Li" /><link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Zikang Li" src="assets/images/favicon.ico" onerror="this.style.display='none'">
+  Zikang Li
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger"><a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+
+
+
+
+
+<span class="page-link">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span></div>
+        </nav></div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Some useful LaTex commands you could define</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2022-09-03T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Sep 03, 2022
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 6 mins</span>
+  </p><div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#LaTex">#LaTex</a></div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h1 id="latex-reference-for-probability">LaTeX Reference for Probability</h1>
+
+<h2 id="shortcuts">Shortcuts</h2>
+
+<p>These are commands you would define in the preamble.</p>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="p">{</span>article<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>amsmath<span class="p">}</span>
+
+<span class="c">% COMMANDS GO HERE</span>
+
+<span class="nt">\begin{document}</span>
+</code></pre></div></div>
+
+<h3 id="absolute-value">Absolute Value</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\abs</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\lvert</span> #1 <span class="k">\rvert</span><span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\bigabs</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\Bigl</span> <span class="k">\lvert</span> #1 <span class="k">\Bigr</span> <span class="k">\rvert</span><span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\abs{x}</code> becomes \(\lvert x \rvert\)</li>
+  <li><code class="language-plaintext highlighter-rouge">\bigabs{\frac{x}{2}}</code> becomes \(\Bigl \lvert \frac{x}{2} \Bigr \rvert\)</li>
+</ul>
+
+<h3 id="bigger-brackets">Bigger Brackets</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\bigbracket</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\Bigl</span> [ #1 <span class="k">\Bigr</span> ]<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\bigbracket{\frac{1}{2} x^2}_{x=0}^{x=1}</code> becomes \({\Bigl [ \frac{1}{2} x^2 \Bigr ]}_{x=0}^{x=1}\)</li>
+</ul>
+
+<h3 id="bigger-parentheses">Bigger Parentheses</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\bigparen</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\Bigl</span> ( #1 <span class="k">\Bigr</span> )<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\bigparen{1 + \frac{1}{n}}^n</code> becomes \({\Bigl ( 1 + \frac{1}{n} \Bigr )}^n\)</li>
+</ul>
+
+<h3 id="ceiling-and-floor">Ceiling and Floor</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\ceil</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\lceil</span> #1 <span class="k">\rceil</span><span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\bigceil</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\Bigl</span> <span class="k">\lceil</span> #1 <span class="k">\Bigr</span> <span class="k">\rceil</span><span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\floor</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\lfloor</span> #1 <span class="k">\rfloor</span><span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\bigfloor</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\Bigl</span> <span class="k">\lfloor</span> #1 <span class="k">\Bigr</span> <span class="k">\rfloor</span><span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\ceil{\log_2 n}</code> becomes \(\lceil \log_2 n \rceil\)</li>
+  <li><code class="language-plaintext highlighter-rouge">\bigfloor{\frac{n}{2}}</code> becomes \(\Bigl \lfloor \frac{n}{2} \Bigr \rfloor\)</li>
+</ul>
+
+<h3 id="norms">Norms</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\norm</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\|</span> #1 <span class="k">\|</span><span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\bignorm</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\Bigl</span> <span class="k">\|</span> #1 <span class="k">\Bigr</span> <span class="k">\|</span> #1<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\norm{x}_2^2</code> becomes \({\| x \|}_2^2\)</li>
+  <li><code class="language-plaintext highlighter-rouge">\bignorm{(X^T X)^{-1} X^T y}</code> becomes \({\Bigl \| (X^T X)^{-1} X^T y \Bigr \|}_2^2\)</li>
+</ul>
+
+<h3 id="inner-product">Inner Product</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\inner</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\langle</span> #1 <span class="k">\rangle</span><span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\inner{u, v}</code> becomes \(\langle u, v \rangle\)</li>
+</ul>
+
+<h3 id="sets">Sets</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\set</span><span class="p">}</span>[1]<span class="p">{</span><span class="k">\{</span> #1 <span class="k">\}</span><span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\set{0, 1}^n</code> becomes \(\{ 0, 1 \}^n\)</li>
+</ul>
+
+<h3 id="style-files">Style Files</h3>
+<p>To avoid defining these commands in the preamble of every document, you can make
+.sty file that contains these commands. For example, add this file
+<a href="/assets/eecs.sty">eecs.sty</a> to an Overleaf project and then add the following
+command in the preamble.</p>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="na">[11pt]</span><span class="p">{</span>article<span class="p">}</span>
+<span class="k">\usepackage</span><span class="na">[margin=1in]</span><span class="p">{</span>geometry<span class="p">}</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>eecs<span class="p">}</span>
+
+<span class="nt">\begin{document}</span>
+</code></pre></div></div>
+
+<p>If you don’t use Overleaf, just make sure <code class="language-plaintext highlighter-rouge">eecs.sty</code> is in the same directory as
+your <code class="language-plaintext highlighter-rouge">.tex</code> file. You can also have it in a parent folder, and reference it like
+this</p>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\usepackage</span><span class="p">{</span>../eecs<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="sets--probability">Sets / Probability</h2>
+
+<h3 id="intersection--union">Intersection / Union</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">P</span><span class="o">(</span><span class="nb">A </span><span class="nv">\cap</span><span class="nb"> B</span><span class="o">)</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>becomes \(P(A \cap B)\)</p>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">P</span><span class="o">(</span><span class="nv">\cup</span><span class="p">_{</span><span class="nb">i</span><span class="o">=</span><span class="m">1</span><span class="p">}^</span><span class="nb">n A</span><span class="p">_</span><span class="nb">i</span><span class="o">)</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>becomes \(P(\cup_{i=1}^n A_i)\)</p>
+
+<h3 id="complement">Complement</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\overline</code> or <code class="language-plaintext highlighter-rouge">\complement</code></li>
+  <li><code class="language-plaintext highlighter-rouge">$P(\overline{A})$</code> becomes \(P(\overline{A})\)</li>
+  <li><code class="language-plaintext highlighter-rouge">$P(A^\complement)$</code> becomes \(P(A^\complement)\)</li>
+</ul>
+
+<h3 id="set-subtraction">Set Subtraction</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">A</span><span class="p">^</span><span class="nv">\complement</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\Omega</span><span class="nb"> </span><span class="nv">\setminus</span><span class="nb"> A</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>becomes \(A^\complement = \Omega \setminus A\)</p>
+
+<h3 id="subset">Subset</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">A </span><span class="nv">\subset</span><span class="nb"> B</span><span class="p">$</span> or <span class="p">$</span><span class="nb">A </span><span class="nv">\subseteq</span><span class="nb"> B</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>becomes \(A \subset B\) or \(A \subseteq B\).</p>
+
+<h3 id="conditional-probability">Conditional Probability</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">P</span><span class="o">(</span><span class="nb">A </span><span class="nv">\mid</span><span class="nb"> B</span><span class="o">)</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>becomes \(P(A \mid B)\)</p>
+
+<h2 id="symbols-in-distributions">Symbols in Distributions</h2>
+
+<h3 id="sim">Sim</h3>
+
+<p>The squiggly <code class="language-plaintext highlighter-rouge">\sim</code> i.e. \(\sim\)</p>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>X<span class="p">_</span>i <span class="k">\stackrel</span><span class="p">{</span>iid<span class="p">}{</span><span class="k">\sim</span><span class="p">}</span> U[0, 1]
+</code></pre></div></div>
+
+<p>becomes \(X_i \stackrel{iid}{\sim} U[0, 1]\)</p>
+
+<h3 id="choose--ncr">Choose / nCr</h3>
+
+<ul>
+  <li>Like found in binomial distribution formula</li>
+  <li><code class="language-plaintext highlighter-rouge">binom{n}{k}</code> becomes \(\binom{n}{k}\)</li>
+</ul>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>P(X = k) = <span class="k">\binom</span><span class="p">{</span>n<span class="p">}{</span>k<span class="p">}</span> p<span class="p">^</span>k (1-p)<span class="p">^{</span>n-k<span class="p">}</span>
+</code></pre></div></div>
+
+<p>becomes \(P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\)</p>
+
+<h3 id="fancy-expectation">Fancy Expectation</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\mathbb{E}</code></li>
+  <li>Need the <code class="language-plaintext highlighter-rouge">amssymb</code> package.</li>
+</ul>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">E</span><span class="o">[</span><span class="nb">X</span><span class="o">]</span><span class="p">$</span> vs. <span class="p">$</span><span class="nv">\mathbb</span><span class="p">{</span><span class="nb">E</span><span class="p">}</span><span class="o">[</span><span class="nb">X</span><span class="o">]</span><span class="p">$</span>
+</code></pre></div></div>
+
+<ul>
+  <li>becomes \(E[X]\) vs \(\mathbb{E}[X]\).</li>
+  <li>Use shortcut if you go with it</li>
+</ul>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\E</span><span class="p">}{</span><span class="k">\mathbb</span><span class="p">{</span>E<span class="p">}}</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">\mathbb</code> is also used for things like</p>
+
+<ul>
+  <li>Real Numbers: <code class="language-plaintext highlighter-rouge">\mathbb{R}^n</code> becomes \(\mathbb{R}^n\)</li>
+  <li>Integers: <code class="language-plaintext highlighter-rouge">\mathbb{Z}^+</code> becomes \(\mathbb{Z}^+\)</li>
+</ul>
+
+<h3 id="fancy-normal">Fancy Normal</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">\mathcal{N}</code></li>
+  <li>Needs the ‘amssymb’ package.</li>
+</ul>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">X </span><span class="nv">\sim</span><span class="nb"> N</span><span class="o">(</span><span class="m">0</span><span class="nb">,</span><span class="m">1</span><span class="o">)</span><span class="p">$</span> vs. <span class="p">$</span><span class="nb">X </span><span class="nv">\sim</span><span class="nb"> </span><span class="nv">\mathcal</span><span class="p">{</span><span class="nb">N</span><span class="p">}</span><span class="o">(</span><span class="m">0</span><span class="nb">, </span><span class="m">1</span><span class="o">)</span><span class="p">$</span>
+</code></pre></div></div>
+
+<ul>
+  <li>becomes \(X \sim N(0,1)\) vs. \(X \sim \mathcal{N}(0,1)\)</li>
+  <li>Use shortcut if you go with it</li>
+</ul>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\newcommand</span><span class="p">{</span><span class="k">\N</span><span class="p">}{</span><span class="k">\mathcal</span><span class="p">{</span>N<span class="p">}}</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">\mathcal</code> is also used for things like</p>
+
+<ul>
+  <li>
+    <p>The set of values an RV can take i.e. <code class="language-plaintext highlighter-rouge">\mathcal{X}</code> or \(\mathcal{X}\)</p>
+
+    <div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E[X] = <span class="k">\sum</span><span class="p">_{</span>x <span class="k">\in</span> <span class="k">\mathcal</span><span class="p">{</span>X<span class="p">}}</span> x <span class="k">\cdot</span> P(X = x)
+</code></pre></div>    </div>
+
+    <p>becomes \(E[X] = \sum_{x \in \mathcal{X}} x \cdot P(X = x)\).</p>
+  </li>
+</ul>
+
+<h3 id="wp">w.p.</h3>
+
+<div class="language-tex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{equation}</span>
+  X =
+  <span class="nt">\begin{cases}</span>
+    1 <span class="p">&amp;</span> <span class="k">\text</span><span class="p">{</span>w.p. <span class="p">$</span><span class="nb">p</span><span class="p">$}</span> <span class="k">\\</span>
+    0 <span class="p">&amp;</span> <span class="k">\text</span><span class="p">{</span>w.p. <span class="p">$</span><span class="m">1</span><span class="o">-</span><span class="nb">p</span><span class="p">$}</span>
+  <span class="nt">\end{cases}</span>
+<span class="nt">\end{equation}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>becomes \(\begin{equation} X = \begin{cases} 1 &amp; \text{w.p. $p$} \\ 0 &amp; \text{w.p. $1-p$} \end{cases} \end{equation}\)</li>
+  <li><code class="language-plaintext highlighter-rouge">&amp;</code> symbols are used to separate columns, <code class="language-plaintext highlighter-rouge">\\</code> are used to make new lines</li>
+</ul>
+
+<!--
+## Markov Chains
+
+```tex
+\begin{equation}
+  P =
+  \begin{bmatrix}
+    1-p & p \\
+    p & 1-p
+  \end{bmatrix}
+\end{equation}
+```
+* becomes $$P = \begin{equation} \begin{bmatrix} 1-p & p \\ p & 1-p \end{bmatrix} \end{equation}$$
+* For graphing, you need the `tikzpicture` library.
+```tex
+\documentclass{article}
+\usepackage{tikz}
+
+\begin{center}
+  \begin{tikzpicture}
+    \node[state] 
+  \end{tikzpicture}
+\end{center}
+-->
+
+
+    </div>
+
+</article>
+<div class="post-nav"><a class="previous" href="/jekyll-theme-yat/programming/2022/08/29/Jupyter-with-env.html" title="How to open Jyputer Notebook with a specified environment.">How to open Jyputer Notebook with...</a><a class="next" href="/jekyll-theme-yat/programming/2022/09/03/LaTex-OR.html" title="Some useful LaTex commands you could define(II)">Some useful LaTex commands you could...</a></div><div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/jekyll-theme-yat/2023/08/15/Seminar-ChenXin.html" title="Some useful LaTex commands you could define(II)">Seminar Chenxin</a></li><li><a class="post-link" href="/jekyll-theme-yat/english/2022/12/28/Words2.html" title="Some useful LaTex commands you could define(II)">Some phases Ⅱ</a></li><li><a class="post-link" href="/jekyll-theme-yat/misc/2022/08/09/Useful_skills.html" title="Some useful LaTex commands you could define(II)">Useful skills</a></li><li><a class="post-link" href="/jekyll-theme-yat/programming/2022/09/03/Latex-Probability.html" title="Some useful LaTex commands you could define(II)">Some useful LaTex commands you could define</a></li></ul>
+    </div><div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">٩(^ᴗ^)۶</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner"><div>Discount's Blog <span class="copyleft">&copy;</span> 2021-2024 Discount</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/jekyll-theme-yat/feed.xml">via RSS</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,7516 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Some literature reviews | Zikang Li</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Some literature reviews" />
+<meta name="author" content="Discount" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Summary about the ideas of papers." />
+<meta property="og:description" content="Summary about the ideas of papers." />
+<link rel="canonical" href="https://dis-count.github.io/jekyll-theme-yat/paper/2022/06/20/Literature-review.html" />
+<meta property="og:url" content="https://dis-count.github.io/jekyll-theme-yat/paper/2022/06/20/Literature-review.html" />
+<meta property="og:site_name" content="Zikang Li" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Some literature reviews" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Discount"},"dateModified":"2022-06-20T00:00:00+00:00","datePublished":"2022-06-20T00:00:00+00:00","description":"Summary about the ideas of papers.","headline":"Some literature reviews","mainEntityOfPage":{"@type":"WebPage","@id":"https://dis-count.github.io/jekyll-theme-yat/paper/2022/06/20/Literature-review.html"},"url":"https://dis-count.github.io/jekyll-theme-yat/paper/2022/06/20/Literature-review.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://dis-count.github.io/jekyll-theme-yat/feed.xml" title="Zikang Li" /><link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Zikang Li" src="assets/images/favicon.ico" onerror="this.style.display='none'">
+  Zikang Li
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger"><a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+
+
+
+
+
+<span class="page-link">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span></div>
+        </nav></div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="articles">
+  
+
+  <p>On the cutting stock problem under stochastic demand.</p>
+
+
+
+  <div class="pagination">
+  <!-- Post list links -->
+  <ul class="post-list"><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/2023/08/15/Seminar-ChenXin.html">
+          Seminar Chenxin
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 15, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/2023/08/15/Seminar-ChenXin.html">
+        <p>
+        - Exponential Time Hypothesis
+
+- McCormick envelopes
+
+- Decoy effect vs Attraction effect
+
+- Substitution matrix
+
+- Laminar M-Convex Minimization <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Seminar">#Seminar</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/research/2023/08/02/How-to-research.html">
+          Do research
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 02, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/research/2023/08/02/How-to-research.html">
+        <p>
+        初进入课题组，在度过最初小心翼翼观摩老师、师兄师姐日常工作学习，询问各种弱智问题后，在经过几次懵逼的组会后，对课题组有什么资源，我们能作什么研究，感觉还是云山雾罩，对自己的课题idea也是非常朦胧，现在回过头来看，还是文献读少了！一个idea不是凭空想出来的，是建立在大量海量文献阅读基础上提炼而来的，除了努力勤奋，有科研灵性和悟性，能够领悟导师的良苦用心，一点就透，彼此达到无障碍沟通，也是有助于快速确立自己研究方向。读文献可以先从综述review入手，先从最大方面入手，比如就是各个大佬写的“肌萎缩侧索硬化”类似题目综述入手，算是一级目录，再从疾病危险因素、病因假说、病理变化、临床治疗、生物标志物等方面综述入手，算是二级目录，在脑子里形成一个大的结构化picture，在这过程中找到自己感... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/2023/03/17/Carbon.html">
+          Carbon
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 17, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/2023/03/17/Carbon.html">
+        <p>
+        Take your way
+
+two ways to reduce carbon 1. carbon tax 2. carbon cap and trade
+
+1. Weak carbon reductions.
+
+2. customer surplus vs pollution tradeoff
+
+3. focusing on permit allocation mechanism
+
+4.  free permit allocation mechanism: grandfather/ benchmarking
+
+lumpsum  一次性支付的金额   customer surplus: 愿意支付的金额与市场价格之差
+
+heterogeneous convex abatement  减... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Seminar">#Seminar</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/2023/03/14/Fraudulent.html">
+          Summary of experience
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 14, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/2023/03/14/Fraudulent.html">
+        <p>
+        1. -100 China Mobile
+
+2. -199 Yellow shared bicycle
+
+3. -99  Alipay for a fraudulent website
+
+4. -138 hkd credit card information leakage <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Diary">#Diary</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2023/02/15/Order2.html">
+          Meal 2
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 15, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2023/02/15/Order2.html">
+        <p>
+        Excuse me. I dropped my fork. May I have another one?
+
+One more, please.  再来一份
+
+Would you like another helping?  服务员问是否再来一份
+
+Anyone wants a second helping?  helping = 一份食物
+
+How about seconds?
+
+Can I get a refill?  续杯 
+
+Drinks are bottomless.
+
+That’s an all-you-can-eat restaurant.  吃到饱
+
+Excuse me. It has been almost thirty minutes since I placed ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/2023/02/14/Summary_of_2022_market.html">
+          Summary of stock market
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 14, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/2023/02/14/Summary_of_2022_market.html">
+        <p>
+        2022年注定是不平凡的一年，从omicron 匆匆来袭为开端，又以最终病毒毒性变弱放松管控为结尾。而与疫情一波三折相呼应的是资本市场的风起云涌，这一年的波动率不可谓不大，如果有敏锐的观察力，能够把握进场时机，赚钱似乎不成问题。
+
+从三月中旬恒生的跌入谷底又迅速反弹中，我们似乎看到了政策底的到来，随着对科技股政策的放松，科技股如同卸下了镣铐，股价毫无压力地冲破阻碍一飞冲天。然而好景不长，伴随着美联储加息美元回流，资产价格和汇率随之下跌，恒生在短暂冲高之后，又迎来漫长的看不到尽头的令人绝望的回撤。
+
+终于随着年底政策的转向，绝大多数股票迎来了接近一倍的增长，如同被三年病毒折磨的压抑心情在尽情释放。然而一切在2023年会变好吗，答案从去年的复盘中就能得到。
+
+这一年，我主要持仓在 Tenc... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Diary">#Diary</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/daily/life/2023/01/18/Diary.html">
+          Record what happened today
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 18, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/daily/life/2023/01/18/Diary.html">
+        <p>
+        In this diary, I will record what happened on 18/1/2023.
+
+Take bus 11 to kung kau market. Then find the way to the community testing centres. It says disinfection time during 1.30 pm- 2 pm. When it is 2pm, I wait in line with booked sign. A man came to me, asked where am I going to? I said Chinese Mainland, then gave a note writing 150, TS(咽喉拭子)... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Diary">#Diary</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/paper/2022/12/30/Mistakes-in-research.html">
+          Some mistakes should be avoided during research
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 30, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/paper/2022/12/30/Mistakes-in-research.html">
+        <p>
+        1. Some thoughts are so naive. You should find some ideas from the literature. Then add the novelty.
+
+For example, the greedy commonly will not be the optimal policy, otherwise this problem will be super easy. Someone must find and publish it already.
+
+2. Notice the size of the problem. If it is very small, then using the solver is enough.
+
+For ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Research">#Research</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/12/28/Words2.html">
+          Some phases Ⅱ
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 28, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 6 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/12/28/Words2.html">
+        <p>
+        abject
+
+orchard
+
+curate
+
+ramp up
+
+purge
+
+lay sewer pipes
+
+unscathed
+
+secrecy
+
+front and center
+
+Closed-circuit television
+
+surveillance
+
+vigilance
+
+Weibo, Chinese equivalent of twitter
+
+scrapped
+
+directive
+
+rhetoric
+
+Triennial  三年一次
+
+fireside chat 炉边会谈
+
+fit the bill   符合要求
+
+accredited  官方认可的
+
+cortex  cortical 大脑皮层  皮层的
+
+malaise (广泛存在的)难以捉摸的问题，无法... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/12/02/Python-tips.html">
+          Python tips
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 02, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/12/02/Python-tips.html">
+        <p>
+        ## 作用域
+
+1. 一切作用域都以代码块为单元
+
+代码块可以是 模块文件；函数体；class 定义； 交互式每行的命令； 脚本文件； 脚本命令； eval() and exec()
+
+2. 函数的声明过程中，所有涉及到变量i的作用域内都不会对i进行赋值，仅仅只是保存了这个i变量名，只有在调用函数的时候才会进行赋值操作。
+
+3. Python 在启动的时候就在内存中预先为常用的较小整数值(-5到256)创建好了对象
+
+4. 函数的默认参数是在函数声明时进行赋值的
+
+5. Python 是词法作用域
+
+- 词法作用域是关联在编译期间的，对于函数来说就是函数的定义文本段的位置决定这个函数所属的范围。
+- 动态作用域是关联在程序执行期间的，对于函数来说就是函数执行的位置决定这个函数所属的范围... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/11/25/DefaultSetting.html">
+          Some default settings I used
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Nov 25, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/11/25/DefaultSetting.html">
+        <p>
+        1. For vscode:
+
+Font color: "editor.foreground": "#e280ae",
+
+line number: "editor.selectionForeground": "#6169e2",
+
+Selection color: "editorLineNumber.activeForeground": "#56a830",
+
+Terminal: "terminal.foreground": "#df6f3c".
+
+2. For jupyter notebook:
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Setting">#Setting</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/10/07/PyTorch_summary.html">
+          PyTorch summary
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 07, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/10/07/PyTorch_summary.html">
+        <p>
+        ## About the dimension
+
+In most cases, system throws a warning because you made a wrong data dimension operation.
+
+Watch out the dimension of specific data, you can use the following code to test.
+
+```python
+w1 = torch.tensor([[1, 2, 1]]) # torch.Size([1, 3])
+w3 = torch.tensor([1, 2, 1])   # torch.Size([3])
+w2 = w1.view(-1)  # in fact, w2 = w3
+`... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#PyTorch">#PyTorch</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/python/2022/09/21/Conda-update.html">
+          Update Python and Conda
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 21, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/python/2022/09/21/Conda-update.html">
+        <p>
+        ```python
+word = "Hello"
+print('word =', word)
+print(f'word = {word}')
+print(f'{word = }')
+```
+
+```python
+conda update conda
+conda update anaconda
+```
+
+## setting of jupyter notebook
+
+[package](https://github.com/dunovank/jupyter-themes)
+
+> pip install jupyterthemes
+
+or
+
+> conda install -c conda-forge jupyterthemes
+> conda update jupyterthemes
+
+... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/15/cmd-code.html">
+          CMD commonly used command
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 15, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/15/cmd-code.html">
+        <p>
+        ##  Shutdown, restart
+
+Shutdown after 3600s
+
+> shutdown /s /t 3600
+
+```cmd
+shutdown /s
+shutdown /r
+```
+
+## Directory operation
+
+enter d
+
+> d:
+
+return root directory
+
+> cd \
+
+return the last directory
+
+> cd ..
+
+enter test2, Case insensitive, `tab` completion
+
+> cd test1\test2
+
+> cd /d d:/test
+
+## Show content
+
+```cmd
+dir
+cd
+tree d:\test
+cd d:
+```... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#cmd">#cmd</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/machinelearning/2022/09/15/Matrix-Derivative.html">
+          Matrix Derivative
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 15, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/machinelearning/2022/09/15/Matrix-Derivative.html">
+        <p>
+        ## Different notations
+Notice that if we think $f$ expands in a column way, i.e.,
+
+$\frac{\partial f}{\partial x}=\left[\begin{array}{cccc}\frac{\partial f_1}{\partial x_1} & \frac{\partial f_2}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_1} \\ \frac{\partial f_1}{\partial x_2} & \frac{\partial f_2}{\partial x_2} & \cdots & \frac{\pa... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#MachineLearning">#MachineLearning</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/python/2022/09/14/Machine-learning-Project.html">
+          Machine learning to solve large TSP
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 14, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/python/2022/09/14/Machine-learning-Project.html">
+        <p>
+        ## Reference
+
+[1](https://ekimetrics.github.io/blog/2021/11/03/tsp/)
+
+[2](https://zhuanlan.zhihu.com/p/556690129)
+
+[3](https://github.com/pfpimenta/tsp_ml)
+
+[4](https://github.com/jakesant/tsp_machine_learning)
+
+[5](https://github.com/ahmedstohy/hybrid-pointer-networks)
+
+https://sagemaker-examples.readthedocs.io/en/latest/reinforcement_learning/... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#MachineLearning">#MachineLearning</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Project">#Project</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/11/Python-Leetcode.html">
+          How to test Python in Leetcode
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 11, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/11/Python-Leetcode.html">
+        <p>
+        ## 实例化类(Manually)
+
+After finishing your method, copy the input in the example, then have a test.
+
+```python
+class Solution:
+    def gcdOfStrings(self, str1: str, str2: str) -> str:
+        return ''
+
+
+if __name__ == "__main__":
+    s = Solution()
+# 测试Example中的用例1
+# Input: str1 = "ABCABC", str2 = "ABC"
+# Output: "ABC"
+    str1 = "ABCABC"
+    str2... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/10/Python-skills.html">
+          Skills frequently used in Python
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 10, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/10/Python-skills.html">
+        <p>
+        [add on that](https://blog.csdn.net/qsmx666/article/details/115433624)
+
+## Usage of Bisect
+
+bisect是python内置模块，用于有序序列的插入和查找。
+
+查找： bisect(array, item)
+插入： insort(array,item)
+
+```python
+import bisect
+ 
+a = [1,2,2,5,8]
+position = bisect.bisect(a,7)#找到插入位置
+print(position)
+# 4
+bisect.insort(a,4)#找到位置插入
+print(a)
+# [1, 2, 2, 4, 5, 8]
+bisect.bisect_left(... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/09/10/Idioms_2.html">
+          Useful Idioms II
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 10, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/09/10/Idioms_2.html">
+        <p>
+        1. ‘The best of both worlds’ – means you can enjoy two different opportunities at the same time.  
+“By working part-time and looking after her kids two days a week she managed to get the best of both worlds.”
+
+2. ‘Speak of the devil’ – this means that the person you’re just talking about actually appears at that moment.  
+“Hi Tom, speak of the d... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Idioms">#Idioms</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/09/09/Usage1.html">
+          Some phases Ⅰ
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 5 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/09/09/Usage1.html">
+        <p>
+        Have some faith: 有点信心
+
+just in case： 以防万一
+
+this is legit： 这非常棒
+
+Leave it alone：别管了
+
+I told you so： 我早就告诉过你
+
+That depends：要看情况而定
+
+Never mind： 算了
+
+Forget about it： 算了吧，别想它了
+
+It's a long story： 说来话长了
+
+Believe it or not： 信不信由你
+
+I coundn't help it：我忍不住了（想做某件事情）
+
+don't get me wrong：别误解我
+
+don't  bother：别费心了
+
+don't waste your energy：别费劲了
+
+stop wasting y... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/09/09/Usage1-copy.html">
+          Some phases Ⅰ
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 5 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/09/09/Usage1-copy.html">
+        <p>
+        Have some faith: 有点信心
+
+just in case： 以防万一
+
+this is legit： 这非常棒
+
+Leave it alone：别管了
+
+I told you so： 我早就告诉过你
+
+That depends：要看情况而定
+
+Never mind： 算了
+
+Forget about it： 算了吧，别想它了
+
+It's a long story： 说来话长了
+
+Believe it or not： 信不信由你
+
+I coundn't help it：我忍不住了（想做某件事情）
+
+don't get me wrong：别误解我
+
+don't  bother：别费心了
+
+don't waste your energy：别费劲了
+
+stop wasting y... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/09/Dic-list-summary.html">
+          Basic elements convert in Python
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/09/Dic-list-summary.html">
+        <p>
+        ## List to Dictionary
+
+```python
+a = ['a1','a2','a3','a4']
+b = ['b1','b2','b3']
+d = zip(a,b)
+print(dict(d))  # {'a1': 'b1', 'a2': 'b2', 'a3': 'b3'}
+```
+
+### Use counter to obtain a aggregated form from List
+
+```python
+from collections import Counter
+counter_dic = Counter(counter_list)
+```
+
+## Dictionary to List
+
+```python
+list(dit) # key
+
+list(d... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/09/09/How-to-reply.html">
+          Reply frequently used
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/09/09/How-to-reply.html">
+        <p>
+        ## Common phrases for not having an opinion:
+
+- I’ve never given it much thought.
+- I don’t have strong feelings either way.
+- It doesn’t make any difference to me.
+- I have no opinion on the matter.
+
+## Common phrases for agreeing:
+
+- Exactly.
+- Absolutely.
+- That’s so true.
+- That’s for sure.
+- I agree 100%
+- I couldn’t agree with you more.
+- ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/paper/2022/09/08/Research-advice.html">
+          Some Research advice
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 08, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/paper/2022/09/08/Research-advice.html">
+        <p>
+        1. 先看综述，后看论著。 看综述搞清概念，看论著掌握方法。
+
+2. 早动手。 在师兄师姐离开之前学会关键技术。
+
+3. 多数文章看摘要，少数文章看全文。 掌握了一点查全文的技巧，往往会以搞到全文为乐，以至于没有时间看文章的内容，更不屑于看摘要。真正有用的全文并不多，过分追求全文是浪费，不可走极端。当然只看摘要也是不对的。
+
+4. 集中时间看文献。 看过总会遗忘，看文献的时间越分散，浪费时间越多。集中时间看更容易联系起来，形成整体印象。
+
+5. 做好记录和标记。 复印或打印的文献，直接用笔标记或批注。pdf 或html 格式的文献，可以用编辑器标亮或改变文字颜色。这是避免时间浪费的又一重要手段。否则等于没看。
+
+6. 准备引用的文章要亲自看过。 转引造成的以讹传讹不胜枚举。
+
+7. 注... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Literature review">#Literature review</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/07/hashable.html">
+          Iterable and hashable in Python
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 07, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/07/hashable.html">
+        <p>
+        ## Hashable
+
+An object is hashable if it has a hash value which never changes during its lifetime (it needs a __hash__() method), and can be compared to other objects (it needs an __eq__() or __cmp__() method). Hashable objects which compare equal must have the same hash value.
+
+Hashability makes an object usable as a dictionary key and a set me... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/03/LaTex-sty-cls.html">
+          Difference between .sty and .cls
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 03, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/03/LaTex-sty-cls.html">
+        <p>
+        Notice the headline of class and style:
+
+```tex
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{minimal}[1995/10/30 Standard LaTeX minimal class]
+```
+
+```tex
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eecs}
+```
+
+[Reference](https://www.jianshu.com/p/12b4a4b3afce)
+
+[use style](https://tex.stackexchange.com/questions/91167/why-use-sty-files)
+
+[diff def](ht... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#LaTex">#LaTex</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/03/LaTex-OR.html">
+          Some useful LaTex commands you could define(II)
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 03, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/03/LaTex-OR.html">
+        <p>
+        ### Basic linear programming 
+
+```tex
+\begin{equation}\label{equation}
+  \begin{aligned}
+  \mbox{max} \quad &  x \\
+  \mbox{s.t.} \quad &  x  \\
+  & x \geq 0, \mbox{integer}\quad \mbox{for}~ i=1,\ldots,m,\\
+\end{aligned}
+\end{equation}
+```
+
+### Algorithm
+
+```tex
+\begin{algorithm}[H]\label{algo}
+  \caption{The algorithm}
+    \begin{description}
+ ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#LaTex">#LaTex</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/09/03/Latex-Probability.html">
+          Some useful LaTex commands you could define
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 03, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/09/03/Latex-Probability.html">
+        <p>
+        # LaTeX Reference for Probability
+
+## Shortcuts
+
+These are commands you would define in the preamble.
+
+```tex
+\documentclass{article}
+\usepackage{amsmath}
+
+% COMMANDS GO HERE
+
+\begin{document}
+```
+
+### Absolute Value
+
+```tex
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\bigabs}[1]{\Bigl \lvert #1 \Bigr \rvert}
+```
+
+* `\abs{x}` becomes $$\l... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#LaTex">#LaTex</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/08/29/Jupyter-with-env.html">
+          How to open Jyputer Notebook with a specified environment.
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 29, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/08/29/Jupyter-with-env.html">
+        <p>
+        0. `conda install nb_conda`
+
+1. Check the environment.
+
+`conda env list`
+
+2. Enter into the environment.
+
+`conda activate env`
+
+3. install a package at your new env
+
+`conda install ipykernel` or
+
+`conda install -n your_env ipykernel`
+
+`python -m ipykernel install --env` 
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/08/28/Jupyter-Address.html">
+          How to change the address of Jyputer Notebook.
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 28, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/08/28/Jupyter-Address.html">
+        <p>
+        ## Change the default address
+
+1. Find the folder which is used to store 'config':
+ 
+In `cmd`, input `jupyter notebook --generate-config`
+
+2. find the file: 'jupyter_notebook_config.py', open it.
+
+3. `c.NotebookApp.notebook_dir = 'specified path' `
+delete the comment #
+
+4.  reboot, done.
+
+Remark:
+
+'c.NotebookApp.browser' can change the browser.
+... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/08/21/How-to-set-domain.html">
+          How to set the domain name
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 21, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/08/21/How-to-set-domain.html">
+        <p>
+        1.  Buy the domain name
+
+2.  域名备案
+
+3.  DNS(域名解析)
+
+4.  搭建(购买)服务器 / 或 CNAME
+
+For github, go to your repository(yourname.github.io), choose 'pages', force 'https'. <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Website">#Website</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/08/20/Useful-terms.html">
+          Terms of Service Agreement
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 20, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/08/20/Useful-terms.html">
+        <p>
+        1. Acceptance
+By using the HKUST Learning Management System (“LMS”, “Service”) provided by Instructure, Inc. (“Service Provider”) and managed by HKUST LMS Administrator (“Administrator”, “We”, ‘Us”), you (“User”, “Users”) are agreeing to be bound by the following terms and conditions (“Terms of Service”).
+
+2. User restriction
+Users are not allow... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Canvas">#Canvas</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/08/20/Idioms.html">
+          Useful Idioms
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 20, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/08/20/Idioms.html">
+        <p>
+        1. Come out of the blue
+   
+To happen unexpectedly.
+She seemed so surprised by the news that it must have come out of the blue.
+You need to work hard—opportunities don't just come out of the blue.
+
+2. Do a double take
+
+To look twice due to surprise or disbelief.
+Everyone did a double take at his shiny new sports car as he drove by.
+Men and women... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Idioms">#Idioms</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/08/19/VirtualEnvironment.html">
+          How to create a virtual environment
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 19, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/08/19/VirtualEnvironment.html">
+        <p>
+        ## Background
+
+When developing software with Python, a basic approach is to install Python on your machine, install all your required libraries via the terminal, write all your code in a single .py file or notebook, and run your Python program in the terminal.
+
+This is a common approach for a lot of beginners and many people transitioning from w... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/08/19/Learn-Pytorch.html">
+          Learn PyTorch
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 19, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/08/19/Learn-Pytorch.html">
+        <p>
+        ## What is PyTorch
+
+Predictive modeling with deep learning is a skill that modern developers need to know.
+
+PyTorch is the premier open-source deep learning framework developed and maintained by Facebook.
+
+------------------------------------------------
+
+PyTorch is a Python-based scientific computing package serving two broad purposes:
+
+- A rep... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#PyTorch">#PyTorch</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/08/18/Suffixes.html">
+          Commonly used noun suffixes
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 18, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/08/18/Suffixes.html">
+        <p>
+        Many words in English are formed from the same root or base word. By adding different suffixes, a range of new words can be formed.
+
+A suffix is a letter or a group of letters that are added to the end of a word to make a new word. Generally, suffixes have a particular meaning. When a suffix is added to a base word and that base word becomes a n... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/08/18/Install-PyTorch.html">
+          How to install PyTorch
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 18, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/08/18/Install-PyTorch.html">
+        <p>
+        ## How to install PyTorch
+
+1. enter anaconda base
+
+2. conda create -n PyTorch python=3.9  
+创建一个 python 的虚拟环境， PyTorch 是环境变量名（可以是任意英文）
+
+Next time, you can activate this virtual environment directly.
+
+Remark: conda env remove -n ***(PyTorch)
+
+3. conda activate PyTorch
+激活虚拟环境
+
+(base) \to (PyTorch)  （开发环境）
+
+4. 进入官网根据配置选择安装 GPU or CPU, 在(PyTorch) 环境下... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#PyTorch">#PyTorch</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/08/17/before-a-meal.html">
+          What to say before and after a meal
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 17, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/08/17/before-a-meal.html">
+        <p>
+        ## What to say before a meal
+If you're having friends over for lunch or dinner, you can say the following:
+
+- Let's dig in (or 'dig in')
+- Enjoy your meal (or 'enjoy')
+- Hope you enjoy what we've made for you
+- Bon appetit
+'Bon appetit' is one of the many French phrases adopted by the English language.
+
+Using this phrase is a very popular way of... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/08/16/Dietary-restrictions.html">
+          Dietary restrictions
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 16, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/08/16/Dietary-restrictions.html">
+        <p>
+        Are you on a special diet?
+
+Do you avoid (eating) any food?
+
+you have any food allergy, taboo, anything you don't eat. Are you a vegetarian?
+
+food taboo  是指在文化和宗教上的（比如说伊斯兰教徒不吃猪肉）
+
+food allergy  是指生理上的过敏 <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/08/10/poetry.html">
+          Poetry
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 10, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/08/10/poetry.html">
+        <p>
+        > 云想衣裳花想容，春风拂槛露华浓。
+
+> 如鉴发光如玉指，未成云鬓也怜人。
+---杨兆品《咏美人梳头》
+
+> 云想衣裳花想容，春风拂槛露华浓。
+---李白《杂曲歌辞·清平调》
+
+> 粉胸半掩疑晴雪，醉眼斜回小样刀。
+---方干《赠美人四首·其一》
+
+> 媚眼随羞合，丹唇逐笑分。
+---何思澄《拟古诗》
+
+众里嫣然通一顾，人间颜色如尘土。
+---王国维《蝶恋花》
+
+吐纳樱唇，氛氲兰气，玉纤握处堪怜。
+---何承燕《吸烟美人》
+
+手如柔荑，肤如凝脂，领如蝤蛴，齿如瓠犀。
+---《诗经·卫风·硕人》
+
+含歌媚盼如桃叶，妙舞轻盈似柳枝。
+---方干《赠美人四首·其二》
+
+垆边人似月，皓腕凝霜雪。
+---韦庄《菩萨蛮·其二》
+
+巧病轻笼，月痕半吐真珠莹。
+---沈谦《点绛唇·美人耳》
+
+状似明... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Poetry">#Poetry</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/or/2022/08/09/polytope.html">
+          Polytope
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/or/2022/08/09/polytope.html">
+        <p>
+        A polyhedron is a special case of a polytope, or, equivalently, a polytope is a generalization of a polyhedron. A polytope has a certain dimension n, and when n=3 we say that the polytope is a polyhedron. (Similarly when n=2 we say that the polytope is a polygon.)
+
+This is analogous to how we can define a general n-dimensional sphere, and how we... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Linear Programming">#Linear Programming</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/misc/2022/08/09/Useful_skills.html">
+          Useful skills
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/misc/2022/08/09/Useful_skills.html">
+        <p>
+        1. Mermaid lets you create diagrams and visualizations using text and code.
+
+2. Plantuml
+
+3.  <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Skills">#Skills</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/08/08/Leetcode_framework.html">
+          Leetcode Framework with Java
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 08, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/08/08/Leetcode_framework.html">
+        <p>
+        Reference: ![](https://zhangnai.xin/2016/09/20/LeetCode-Framework/)
+
+The post is used to record the leetcode framework by using Java.
+
+1. At the beginning, I don't know how to program with Java. 
+
+In order to improve the efficiency, we should formulate the procedure when we write the code.
+
+2. Notice that there are two parts: test examples and a... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Java">#Java</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/08/07/Java-learning.html">
+          Java basics
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 07, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/08/07/Java-learning.html">
+        <p>
+        Java 基础之 main 方法解读：
+
+一、深入理解 main 方法：（由java虚拟机调用）
+解释 main 方法的形式：public static void main (String [] args){}
+
+-1.Java虚拟机需要调用类的 main()方法，所以该方法的访问权限必须是 public；
+
+-2.Java虚拟机在执行 main() 方法的时候不必创建对象，所以该方法必须是 static；
+
+-3.该方法接收 String 类型的数组参数，该数组中保存执行 Java 命令是传递给所运行的类的参数；
+
+-4.Java执行程序时，传入参数。
+
+二、特别提示：
+
+-1.在 main() 方法中，我们可以直接调用 main() 方法所在类的静态方法或静态属性。
+
+-2.但是，... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Java">#Java</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/or/2022/08/04/MiniMAx-regret.html">
+          Minimax regret
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 04, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/or/2022/08/04/MiniMAx-regret.html">
+        <p>
+        Maximin, maximax and minimax regret are three approaches to decision making under uncertainty.
+
+1. The maximax rule involves selecting the alternative that maximises the maximum payoff available.
+
+The manager who employs the maximax criterion is a risk-taker.
+
+2. The maximin rule involves selecting the alternative that maximises the minimum pay-... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Decision theory">#Decision theory</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/07/30/Useful-English-phrase.html">
+          Useful Phrases
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 30, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/07/30/Useful-English-phrase.html">
+        <p>
+        1. Just give me a moment/minute/sec.
+
+Could you wait a moment please?
+
+2. Could/can you hold please?
+
+3. Have/take a seat, please.
+
+4. On a side note  另一方面
+
+5. A blessing in disguise  因祸得福
+
+6. Not a cloud in the sky  万里无云；万事大吉
+
+7. Rise and shine! 快起床！
+
+8.  A sight for sore eyes  乐于看到的人，喜闻乐见的事
+   
+9.  In/with hindsight  事后看来
+    
+10. Tip-top 顶呱呱
+... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#BBC learning">#BBC learning</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/07/26/Coding-summary.html">
+          Summary about coding
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 26, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/07/26/Coding-summary.html">
+        <p>
+        1. Realize some functions seperately.
+
+But when you merge these functions into a main function, remember to use the same name(data structure) representing the same variable.
+
+2. Would better design the flow of the functions at the beginning. Add to the main function after testing each sub-function.  <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/07/16/Gurobi_skills.html">
+          Summary about Gurobi
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 16, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/07/16/Gurobi_skills.html">
+        <p>
+        ## addMVar vs addVar
+
+For MVar, 
+
+z = m.addMVar(shape = W, vtype=GRB.CONTINUOUS)
+
+just use z[0] to indicate the first variable.
+
+For Var,
+
+x ={}
+
+for i in range(1,3):
+    x[i] = model.addVar(lb = 0, ub = GRB.INFINITY, vtype = GRB.CONTINUOUS, name = 'x_' + str(i))
+
+Use x[1] to indicate the first variable.
+
+## addConstrs() vs addConstr()
+
+model.ad... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gurobi">#Gurobi</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/paper/2022/07/12/thesis-defense.html">
+          How to prepare an excellent thesis defense
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 12, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 9 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/paper/2022/07/12/thesis-defense.html">
+        <p>
+        Original link.
+https://paperpile.com/g/thesis-defense/
+
+## What is a thesis defense?
+
+If you're about to complete, or have ever completed a graduate degree, you have most likely come across the term "thesis defense". In many countries, to finish a graduate degree, you have to write a thesis. In general, a thesis is a large paper based on a topic... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Thesis defense">#Thesis defense</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/paper/2022/07/12/What-is-thesis-defense.html">
+          What is a thesis defense?
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 12, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 6 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/paper/2022/07/12/What-is-thesis-defense.html">
+        <p>
+        Original link:
+https://www.cc.gatech.edu/faculty/ashwin/wisdom/what-is-a-thesis-defense.html
+
+## What is a thesis defense?
+A thesis defense has two parts: a thesis and a defense. The second mistake many students make is not knowing what their thesis is. The third mistake is not knowing how to defend it. (The first mistake is describe later.)
+
+##... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Thesis defense">#Thesis defense</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/07/08/Words1.html">
+          Some phases
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 08, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 6 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/07/08/Words1.html">
+        <p>
+        1. What a pity
+
+In a sarcastic sense.
+
+Day to day, I'll be like -- Daily.
+
+That sucks.
+
+That's too bad.
+
+That's a shame.
+
+2. Just so-so.
+
+It's alright.
+
+It's ok.
+
+It's not bad.
+
+3. Seldom
+
+Rarely
+
+Hardly ever
+
+I don't really do that...
+
+That's not for me...
+
+1. Some adverbs.
+
+Honestly,
+
+Basically,
+
+Actually,
+
+Definitely,
+
+Inherently.
+
+Probably,
+... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/06/27/Some-mistakes-in-latex.html">
+          Mistakes in LaTex
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 27, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/06/27/Some-mistakes-in-latex.html">
+        <p>
+        ## About the equation.
+
+When you use a wrong combination, the program will have errors.
+
+For example, if you use begin aligned seperately, you will encounter some problems.
+
+- begin align
+
+end align
+
+- begin equation
+
+begin aligned
+
+end aligned
+
+end equation
+
+- \\[
+begin split
+end split
+\\]
+
+## About the text
+
+You could use \\mbox{content} or \\... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#LaTex">#LaTex</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/06/22/Mistakes-should-be-avoided.html">
+          Mistakes should be avoided
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 22, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/06/22/Mistakes-should-be-avoided.html">
+        <p>
+        -1. The cancellation of the meeting is due to the rain.
+
+due to= caused by
+
+-2. Thank you for considering my request.
+
+I will be grateful for the help.
+
+I hope you will be able to provide the information.
+
+Instead of 'thank you in advance'.
+
+-3. If there is any question, please let me know.
+
+Should you have any question, please let me know.
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Mistakes">#Mistakes</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/06/22/How-to-make-an-order.html">
+          Make an order in a restaurant
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 22, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/06/22/How-to-make-an-order.html">
+        <p>
+        -1. Can I get a drip coffee, please?/May I have a drip coffee, please?
+ 
+Do you have drip coffee?/Can I order a drip coffee? 手冲咖啡
+
+-2. Can I get this to go?
+
+I’d like the Spaghetti and Meatballs, to go please.
+
+Can I have the Fried Rice and Egg Rolls? Take out.
+
+For here or to go? *For here, please*
+
+-3. Is that all you'll be ordering?/ Would yo... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/jekyll/2022/06/21/How-to-setup.html">
+          How to run Jekyll
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 21, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/jekyll/2022/06/21/How-to-setup.html">
+        <p>
+        ## Installing Jekyll
+
+### Install Ruby
+
+Use Ruby --version to check
+
+### Install Bundler
+
+gem install bundler
+
+### Install Jekyll
+
+Write the following in Gemfile
+
+source 'https://rubygems.org'
+gem 'github-pages'
+
+Then use the command to run jekyll in the local server.
+
+bundle exec jekyll serve
+
+http://localhost:4000
+
+Problem 1: Please add the fo... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Jekyll">#Jekyll</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/paper/2022/06/20/Literature-review.html">
+          Some literature reviews
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 20, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/paper/2022/06/20/Literature-review.html">
+        <p>
+        On the cutting stock problem under stochastic demand.
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Literature review">#Literature review</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/programming/2022/06/20/Python_issues.html">
+          Python issue
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 20, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/programming/2022/06/20/Python_issues.html">
+        <p>
+        四舍六入五成双/单
+
+ieee754
+
+round(1.315,2) = 1.31
+
+round(7.55,1) = 7.5
+
+python判断某个模块是否有某个方法
+
+import requests
+hasattr(requests,'get')
+
+
+查看方法
+
+import typing
+help(typing.List)
+print(dir(typing))
+typing.__file__
+print(typing.__doc__)
+
+
+查看对象
+
+object.dit
+
+查看源代码
+
+inspect 一个Python内置的标准库
+drill 是一个第三方库
+
+
+  import inspect
+
+
+
+  from bs4 import BeautifulSoup
+
+
+先看看Be... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Python">#Python</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/06/13/QE.html">
+          2022 QE Exam Summary
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 13, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 2 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/06/13/QE.html">
+        <p>
+        DOR:
+
+-1. objective function  the summation of bivariate function with a  knapsack constraint
+
+develop a DP state, stage, recursion, value function
+
+What if add another term \(x_n x_1\)
+
+-2. what the relation between
+
+\(\min cx s.t. Ax \geq b\) and \(\max cx  s.t. Ax \leq b\)  when these two LPs have finite optimal solutions.
+
+In fact, they will... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Exam">#Exam</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/05/26/SOR-final.html">
+          2022 SOR Final Exam Summary
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> May 26, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/05/26/SOR-final.html">
+        <p>
+        -1. Finite states markov chain
+
+Irreducible.
+
+You should know the difference between recurrent and transient.
+
+-2. M/M/2/n
+
+2 : servers.
+n : Waiting space.
+
+-3. \(M/M/\infty\)
+
+Birth and death process. Define the correct states.
+
+-4. Notice the difference between simple random walk and gambler ruin problem.
+
+The probability of a before b. The ex... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Exam">#Exam</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/02/09/Useful-Advice.html">
+          Advice on stock market
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/02/09/Useful-Advice.html">
+        <p>
+        1、低价股不要进！只有强者恒强，少有弱者转强，股价低于6元，要么是业绩不行，要么是主力不喜欢，总之都没有上涨的逻辑，很难出现黑马股，形态再好不要进！
+
+2、高位出利好的票不要进！当一只股票涨幅超过80%以上，然后再出利好的大多数是吸引散户跟风接盘，因为消息主力已经提前知晓，如果跟风的人不多可能还会拉一波再诱多，如果跟风人过多主力直接出货造成股价大跌！
+
+3、偏离均线过远的票不要进！任何一只股票的上涨都会依托某根均线，比如10日或者20日均线，但当连续大阳线上涨偏离这根均线过远的时候不要着急介入，因为他往往会回调到均线附近再二次上攻，势必给你更好的点位！
+
+4、跳空三连阳的票不要进！当一只股票连续跳空高开高走，出现2个没有回补的缺口的3根阳线后，大概率是主力拉一波就跑，后市通常会跌的，所... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#StockMarket">#StockMarket</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/01/28/10tips.html">
+          10 Tips &quot;For Successful Public Speaking&quot;
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 28, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/01/28/10tips.html">
+        <p>
+        Feeling some nervousness before giving a speech is natural and even beneficial. But too much nervousness can be detrimental. Here are some proven tips on how to control your butterflies and give better presentations:
+
+-1. Know your material
+
+Pick a topic you intersted in. Know more about it than you include in your speech.
+
+-2. Practice. Practic... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/01/27/Fuck-shit.html">
+          Shit / Fuck
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 27, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/01/27/Fuck-shit.html">
+        <p>
+        Shit
+
+
+  
+    Take a shit
+  
+  
+    Oh shit! (surprising)
+  
+  
+    The shit (Great)
+  
+  
+    Piece of shit (Bad)
+  
+  
+    Give a shit (care about)
+  
+  
+    Eat shit (if you fall down then you ate shit)
+  
+  
+    Shitty (Terrible)
+  
+
+
+Fuck
+
+
+  
+    Fuck (Unhappy)
+  
+  
+    Fuck this (Give it up, 去你的)
+  
+  
+    Fuck off  (get off)
+  
+  
+    F... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/01/27/English-Accumulation.html">
+          Useful accumulation
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 27, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/01/27/English-Accumulation.html">
+        <p>
+        -1. Don’t get me wrong 别误会我
+
+-2. You have my word 我保证
+
+-3. Can I take a rain check? 你可以改天嘛？
+
+-4. Hang on a sec 等一下
+
+-5. I’ll give it a shot 我试试看
+
+-6. I’m gonna do
+
+-7. finna
+“Finna” is an abbreviation for the phrase “fixing to.” It is essentially used in place of the more common (and the more easily understandable) “gonna,” which is short for “g... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/english/2022/01/26/Reply-to-thankyou.html">
+          Reply to the &#39;Thank you&#39;
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 26, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/english/2022/01/26/Reply-to-thankyou.html">
+        <p>
+        Reply to the ‘Thank you’
+
+1.My pleasure./It’s my pleasure.乐意效劳；这是我的荣幸。
+
+这一句回答相当客气并且有礼貌，可以用来回答那些你乐于热心帮助的人，也可以显示你的热情。这句话比“You’re welcome”更加正式，语气也强。通常男生们会在女生面前显示一下自己足够绅士，用上这句话。你还可以说，“It was my pleasure.”或者“Pleasure is all mine.”
+
+2.Sure/Sure thing.应该的
+
+你相信吗？这是美国人最常见的回答方式之一，但是飞儿打赌90%的人都没学过，并且不知道能这么说。你肯定会疑惑，用Sure回答不是“当然”的意思吗？几乎每个去美国的中国人，都会对老美回答“sure”... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Commonly used">#Commonly used</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2022/01/09/general.html">
+          Analysis about stock market
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2022/01/09/general.html">
+        <p>
+        如果此时估值较高，则需要判断
+估值是否能够被之后的盈利所摊平，能够摊平，则股价继续横盘或者上升。不能则显然会下跌。
+
+实际利率 要参考  名义利率差值（央行）和通胀差值。
+
+股市和经济之间的关系：
+
+
+  内需，对内的价值
+  外需
+  流动性
+
+
+通胀预期反转
+产业政策引导，资金成本低都会带来估值扩张
+
+通胀预期减弱，外需减弱，
+
+内需恢复增长同时享受估值扩张的–消费类龙头。
+外需增长，高PPI支持，产业扶持高估值扩张–新能源。
+
+中债告诉内需如何，PPI(M)告诉外需如何。
+
+人民币开始贬值则意味着外需开始减弱
+
+根据上述分析就能够得到a股市场的微观结构
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#StockMarket">#StockMarket</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2021/12/31/Stock-market.html">
+          Analysis about stock market
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 31, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2021/12/31/Stock-market.html">
+        <p>
+        
+  巨人网络  为了提前止盈，卖出了筹码，被洗出来了，大失败。所以这个时候要忘记自己的成本，不要为了那么一点蝇头小利而抛弃筹码。少盈利 10%。
+  哔哩哔哩，注意看基本面，不要轻易抄底。技术分析还是有点用的，一旦跌破支撑位，谨慎操作。
+  阿里巴巴不用说，严重低估，买就完事了。
+  360 网络安全 等待机会。
+  船舶周期。
+  格力
+但是要注意 A股的大多数公司没有什么核心竞争力，靠的是关系，所以需要格外的注意甄选。
+
+
+行业分析：
+
+  医药自从疫情以来，一直处于高位，即使价值回调，股价依然是处于高位的。
+  地产、银行、保险、家电在21年的不断下跌使得22年的投资机会大增。
+  投资股市不是考满分的应试考试，是答出你会做的题就可以赚钱，所以要去做确定性大的事，找估值低的板块... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#StockMarket">#StockMarket</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/2021/12/22/What-is-good-research.html">
+          What Is Good Research
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 22, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/2021/12/22/What-is-good-research.html">
+        <p>
+        
+对于城市研究，或者社会科学研究这个大类来说，什么是好的研究，有各种各样的判断标准。有的人认为，没有做过的，我做了填补了空白，就是好研究。有的认为有新东西的才是创新。新也有各种新，填补空白也是新，新瓶装旧酒也是新。有的要求更高一些，认为研究必须对知识有贡献，才能说是好研究。知识贡献可以是理论贡献，经验贡献，方法贡献，也可以是具体技术的贡献。我觉得好研究的标准还可以更高一些 。
+
+一个好的研究，不仅面对的问题是清晰且直指本质的，而且是采用了一种非常巧妙的方式回答这个问题。这种巧妙并不是走捷径，而是可以复制借鉴的理论视角、逻辑、方法论，使得人类得以以全新的视角认识或解决这个问题。巧妙的理论解释不仅要经历过奥卡姆剃刀，还能够大大提升实证的价值，并且最后反过来促进理论理解的进步。巧妙的方法论能... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/seminar/2021/12/17/Seminar.html">
+          Finite-Sample analysis of reinforcement learning
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 17, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/seminar/2021/12/17/Seminar.html">
+        <p>
+        Contraction mapping
+
+Q-learning
+
+2022-11-16 Rui Gao– Optimal robust policy for feature-based newsvendor
+
+2022-11-17 Yinyu Ye–  Online linear programming: applications and extensions
+
+Multi-armed bandit problem
+
+2022-11-14 Min Dai– bitcoin mining and electricity consumption
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Seminar">#Seminar</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2021/12/17/hyperlink-md.html">
+          Hyperlink in Markdown
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 17, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2021/12/17/hyperlink-md.html">
+        <p>
+        行内式
+
+1.普通链接：
+
+Google
+
+2.指向本地文件的链接：
+
+red.jpg
+
+自动链接
+
+使用 &lt;&gt; 包括的 URL 或邮箱地址会被自动转换为超链接：
+
+http://www.google.com/
+
+123@email.com
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Markdown">#Markdown</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2021/12/16/DOR-final.html">
+          2021 DOR Final Exam
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 16, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2021/12/16/DOR-final.html">
+        <p>
+        The main content about deterministic models.
+
+
+  
+    Duality theorem.
+Weak/Strong duality.
+  
+  
+    Set covering/partition/packing
+$Kx \geq e, Kx = e, Kx \leq e$.
+  
+  
+    Nonlinear programming.
+Use KKT conditions.
+  
+  
+    Convexity.
+Use definition to prove.
+  
+  
+    Dynamic lot sizing.
+If every period we can order two types of products, w... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Exam">#Exam</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/blog/2021/12/14/ES-final.html">
+          2021 ES Final Exam Content
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 14, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/blog/2021/12/14/ES-final.html">
+        <p>
+        
+  GLM. *2
+You should know the difference between logit and probit regression.
+Why this model use the normal distribution as the link function.
+
+
+EM algorithm– How to obtain the Q function.(log likelihood function)
+
+
+  
+    Quantile Regression
+Strat from the median, which is the 50% quantile regression.
+You should know the background of quantile... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Exam">#Exam</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/jekyll-theme-yat/or/2021/11/26/lazy-constraint.html">
+          The application of the lazy constraints to solving the symmetric TSP problem.
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Nov 26, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 11 mins</span>
+      </div>
+      <a class="post-excerpt" href="/jekyll-theme-yat/or/2021/11/26/lazy-constraint.html">
+        <p>
+        Abstract
+
+This project presents an overview of the lazy constraints and their application to the TSP problem. At first, I will give the description of the symmetric TSP and its most commonly formulation. After introducing the lazy constraints, I will use the standard TSP instances to test the effectiveness of lazy formulations.
+Then I will bring... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#OperationResearch">#OperationResearch</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Project">#Project</a></div>
+    </li></ul>
+
+  <!-- Pagination links --></div>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="common-list">
+  <ul>
+    <li>
+      <a href="/jekyll-theme-yat/index.html">
+        All<span>72</span>
+      </a>
+    </li>
+
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Blog">
+          Blog <span>10</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Daily">
+          Daily <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-English">
+          English <span>18</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Jekyll">
+          Jekyll <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Life">
+          Life <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-MachineLearning">
+          MachineLearning <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Misc">
+          Misc <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-OR">
+          OR <span>3</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Paper">
+          Paper <span>5</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Programming">
+          Programming <span>22</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Python">
+          Python <span>2</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Research">
+          Research <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Seminar">
+          Seminar <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-blog">
+          blog <span>1</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner"><div>Discount's Blog <span class="copyleft">&copy;</span> 2021-2024 Discount</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/jekyll-theme-yat/feed.xml">via RSS</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
